@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trip Destinations Tours - Official Package & B2B Booking Portal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        irctc: {
+                            navy: '#002B49',
+                            blue: '#0F52BA',
+                            lightBlue: '#EBF3FA',
+                            orange: '#FB8808',
+                            orangeHover: '#e07600',
+                            gold: '#FFD700',
+                            grayBg: '#F3F4F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .irctc-header-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+        .irctc-tab-active {
+            border-bottom: 3px solid #FB8808;
+            color: #FB8808;
+            font-weight: 700;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #002B49;
+            border-radius: 4px;
+        }
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-move {
+            display: inline-block;
+            animation: ticker 30s linear infinite;
+        }
+        .ticker-move:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-irctc-grayBg text-slate-800 font-sans antialiased selection:bg-irctc-orange selection:text-white">
+
+    <!-- TOP UTILITY BAR -->
+    <div class="bg-irctc-navy text-white text-xs py-1.5 px-4 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4 text-[11px]">
+                <span class="font-bold tracking-wider text-irctc-gold"><i class="fa-solid fa-shield-halved mr-1"></i> Himachal Pradesh Government Approved Travel Company • Reg. No. 11-1786/2021-DTO-SML</span>
+            </div>
+            <div class="flex items-center gap-3 text-[11px]">
+                <span class="text-slate-300"><i class="fa-solid fa-location-dot mr-1 text-irctc-orange"></i> Regd.Office Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</span>
+                <span class="text-slate-500">|</span>
+                <a href="https://wa.me/917876791618" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-2 py-0.5 rounded flex items-center gap-1 transition">
+                    <i class="fa-brands fa-whatsapp"></i> Whats App Live Chat
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANNOUNCEMENT TICKER BANNER -->
+    <div class="bg-irctc-gold text-irctc-navy font-bold text-[11px] py-1 border-b border-yellow-500">
+        <div class="max-w-7xl mx-auto flex items-center px-4">
+            <span class="bg-irctc-navy text-white px-2 py-0.5 rounded text-[10px] uppercase tracking-wider font-extrabold mr-3 shrink-0"><i class="fa-solid fa-bullhorn text-irctc-orange mr-1"></i> Update</span>
+            <div class="ticker-wrap flex-1">
+                <div class="ticker-move">
+                    <span class="mr-8">★ Welcome to My Trip Destinations Tours (mytripdestinationstours.in)!</span>
+                    <span class="mr-8">★ NEW: Shimla, Naldehra & Tattapani River Activity Circuit (3N/4D) Open for Booking!</span>
+                    <span class="mr-8">★ All Destination Circuits Available in Fare Estimator & Lead Form!</span>
+                    <span class="mr-8">★ Rated 4.9★ on Google Reviews (45+ Verified Ratings)!</span>
+                    <span class="mr-8">★ Travel Agent Registration Open for Partners across India!</span>
+                    <span class="mr-8">★ 24x7 Direct Support Helpline: +91 78767 91618 | Email: mytripdestinationstours@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="bg-white irctc-header-shadow sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+            
+            <a href="https://mytripdestinationstours.in" class="flex items-center gap-3">
+                <img src="mtdt logo.jpg" alt="My Trip Destinations Tours Logo" class="w-14 h-14 rounded-full object-cover border-2 border-irctc-navy shadow-md">
+                <div>
+                    <span class="font-heading font-extrabold text-xl sm:text-2xl text-irctc-navy tracking-tight block leading-none">
+                        MY TRIP DESTINATIONS TOURS
+                    </span>
+                    <span class="text-[10px] tracking-[0.2em] text-irctc-orange font-bold uppercase block mt-1">
+                        mytripdestinationstours.in • Your Package Booking Portal
+                    </span>
+                </div>
+            </a>
+
+            <!-- NAV LINKS -->
+            <div class="hidden lg:flex items-center gap-6 text-xs font-bold text-irctc-navy uppercase">
+                <a href="#search-section" class="hover:text-irctc-orange transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-bus text-irctc-orange text-sm"></i> Tour Packages
+                </a>
+                <a href="#custom-calc" class="hover:text-irctc-orange transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-calculator text-irctc-orange text-sm"></i> Fare Estimator
+                </a>
+                <a href="#destinations" class="hover:text-irctc-orange transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-map-location-dot text-irctc-orange text-sm"></i> Destinations
+                </a>
+                <button onclick="openLegalModal('about')" class="hover:text-irctc-orange transition flex items-center gap-1.5 uppercase font-bold">
+                    <i class="fa-solid fa-building text-irctc-orange text-sm"></i> About Us
+                </button>
+                <a href="#agent-portal" class="hover:text-irctc-orange transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-handshake text-irctc-orange text-sm"></i> Agent Portal
+                </a>
+                <a href="#faq-section" class="hover:text-irctc-orange transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-question text-irctc-orange text-sm"></i> FAQ
+                </a>
+                <a href="tel:+917876791618" class="hover:text-irctc-orange transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-headset text-irctc-orange text-sm"></i> Contact
+                </a>
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="hidden sm:flex items-center gap-2">
+                <a href="tel:+917876791618" class="bg-irctc-navy text-white text-xs font-bold px-3 py-2 rounded shadow hover:bg-slate-800 transition flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-irctc-gold"></i> +91 78767 91618
+                </a>
+                <a href="https://wa.me/917876791618" target="_blank" class="bg-irctc-orange text-white text-xs font-bold px-3 py-2 rounded shadow hover:bg-irctc-orangeHover transition flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp"></i> Whats App
+                </a>
+            </div>
+
+            <!-- MOBILE NAV TOGGLE -->
+            <button onclick="toggleMobileNav()" class="lg:hidden text-2xl text-irctc-navy">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-nav" class="hidden lg:hidden bg-irctc-navy text-white p-4 space-y-3 text-sm">
+            <a href="#search-section" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Tour Packages</a>
+            <a href="#custom-calc" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Custom Vehicle & Trip Calculator</a>
+            <a href="#destinations" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Destination Directory</a>
+            <button onclick="toggleMobileNav(); openLegalModal('about')" class="block py-1 border-b border-slate-700 w-full text-left">About My Trip Destinations Tours</button>
+            <a href="#agent-portal" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Travel Agent Registration & Login</a>
+            <a href="#faq-section" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Help & Guidance FAQ</a>
+            <a href="tel:+917876791618" class="block py-1">Contact Office (+91 78767 91618)</a>
+            <a href="https://wa.me/917876791618" target="_blank" class="w-full bg-irctc-orange text-white text-center font-bold py-2 rounded block mt-2">
+                <i class="fa-brands fa-whatsapp mr-1"></i> Whats App 24x7 Helpline
+            </a>
+        </div>
+    </header>
+
+    <!-- SEARCH HERO BAR -->
+    <section id="search-section" class="relative bg-gradient-to-r from-irctc-navy via-irctc-blue to-irctc-navy text-white py-12 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="mb-6 text-center sm:text-left">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                    <span class="bg-irctc-orange text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Authorized & Certified • Reg. No. 11-1786/2021-DTO-SML</span>
+                    <a href="https://www.google.com/search?q=My+Trip+Destinations+Tours+Shimla+reviews" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider transition inline-flex items-center gap-1">
+                        <i class="fa-brands fa-google text-irctc-gold"></i> 4.9 / 5 Google Rated (45 Reviews)
+                    </a>
+                </div>
+                <h1 class="font-heading text-2xl sm:text-4xl font-bold mt-1">My Trip Destinations Tours</h1>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1">Official Portal: mytripdestinationstours.in • Himachal Circuits • Taj & Himalaya • Kashmir • Uttarakhand • Leh Ladakh • Rajasthan • Kerala • Sikkim & Andaman Islands</p>
+            </div>
+
+            <!-- SEARCH WIDGET -->
+            <div class="bg-white rounded-lg shadow-2xl p-4 sm:p-6 text-slate-800">
+                <div class="flex border-b border-slate-200 mb-4 pb-2 gap-4 text-xs font-bold uppercase">
+                    <button class="irctc-tab-active pb-2 flex items-center gap-1"><i class="fa-solid fa-bus text-irctc-orange"></i> Tour Package Catalog</button>
+                    <button onclick="scrollToCalc()" class="text-slate-500 hover:text-irctc-navy pb-2 flex items-center gap-1"><i class="fa-solid fa-car text-slate-400"></i> Vehicle & Fare Calculator</button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+                    <div class="sm:col-span-9">
+                        <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1"><i class="fa-solid fa-location-dot text-irctc-orange mr-1"></i> Select Destination Circuit</label>
+                        <select id="hero-dest" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 text-xs font-medium focus:outline-none focus:border-irctc-blue dest-select-options">
+                            <!-- Injected via JavaScript -->
+                        </select>
+                    </div>
+
+                    <div class="sm:col-span-3">
+                        <button onclick="executeHeroSearch()" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold p-2.5 rounded text-xs uppercase tracking-wider shadow transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search Packages
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AUTHORIZED & CERTIFIED BADGES BANNER -->
+    <section class="bg-white py-6 border-b border-slate-200 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
+                <i class="fa-solid fa-award text-2xl text-irctc-orange"></i>
+                <h4 class="font-bold text-xs text-irctc-navy">HP Govt Approved</h4>
+                <p class="text-[10px] text-slate-500">Reg. 11-1786/2021-DTO-SML</p>
+            </div>
+            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
+                <i class="fa-solid fa-user-shield text-2xl text-emerald-600"></i>
+                <h4 class="font-bold text-xs text-irctc-navy">24x7 Guest Safety</h4>
+                <p class="text-[10px] text-slate-500">Dedicated On-Ground Team</p>
+            </div>
+            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
+                <i class="fa-solid fa-star text-2xl text-irctc-gold"></i>
+                <h4 class="font-bold text-xs text-irctc-navy">4.9★ Google Verified</h4>
+                <p class="text-[10px] text-slate-500">45+ Top Traveler Reviews</p>
+            </div>
+            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
+                <i class="fa-solid fa-handshake text-2xl text-irctc-blue"></i>
+                <h4 class="font-bold text-xs text-irctc-navy">B2B Agent Network</h4>
+                <p class="text-[10px] text-slate-500">Pan-India Travel Partners</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FARE CALCULATOR & EMAIL LEAD FORM SECTION -->
+    <section id="custom-calc" class="py-12 px-4 sm:px-6 max-w-7xl mx-auto">
+        <div class="bg-white rounded-lg border border-slate-200 irctc-header-shadow overflow-hidden">
+            
+            <div class="bg-irctc-navy text-white p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                <div>
+                    <span class="bg-irctc-gold text-irctc-navy text-[10px] font-bold px-2 py-0.5 rounded uppercase">Direct Email Lead Submission Engine</span>
+                    <h2 class="font-heading text-xl sm:text-2xl font-bold mt-1">Custom Vehicle & Lead Booking Form</h2>
+                </div>
+                <div class="text-xs text-slate-300">
+                    <i class="fa-solid fa-envelope-circle-check text-irctc-gold"></i> Live Submission to mytripdestinationstours@gmail.com
+                </div>
+            </div>
+
+            <!-- FORM START -->
+            <form id="leadForm" onsubmit="submitLeadForm(event)" class="p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Hidden inputs for Web3Forms email service -->
+                <input type="hidden" name="access_key" value="535b0a4a-8f19-43cc-a5f7-2dfcdda4bc60">
+                <input type="hidden" name="subject" value="New Lead Submission - My Trip Destinations Tours">
+                <input type="hidden" name="to_email" value="mytripdestinationstours@gmail.com">
+                <input type="hidden" name="calculated_total" id="hidden_total">
+                <input type="hidden" name="vehicle_category" id="hidden_vehicle">
+
+                <!-- INPUT CONTROLS -->
+                <div class="lg:col-span-7 space-y-5 text-xs">
+                    
+                    <!-- LEAD PASSENGER & CONTACT INFO -->
+                    <div>
+                        <label class="block font-bold text-slate-700 uppercase mb-1">Lead Passenger Name *</label>
+                        <input type="text" id="calc-name" name="guest_name" required placeholder="Enter Passenger Full Name" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none mb-3">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block font-bold text-slate-700 uppercase mb-1">Phone / Whats App No. *</label>
+                                <input type="tel" id="calc-phone" name="phone" required placeholder="+91 98765 43210" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 uppercase mb-1">Working Email ID *</label>
+                                <input type="email" id="calc-email" name="email" required placeholder="guest@example.com" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRAVEL DATE & DESTINATIONS -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div>
+                            <label class="block font-bold text-slate-700 uppercase mb-1"><i class="fa-solid fa-calendar-days text-irctc-orange mr-1"></i> Travel Date *</label>
+                            <input type="date" id="calc-date" name="travel_date" required class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-slate-700 uppercase mb-1">Destination Circuit</label>
+                            <select id="calc-dest" name="destination_circuit" onchange="recalculateTrip()" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none dest-select-options">
+                                <!-- Injected via JavaScript -->
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-slate-700 uppercase mb-1">Duration</label>
+                            <select id="calc-duration" name="duration" onchange="recalculateTrip()" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none">
+                                <option value="3">2 Nights / 3 Days</option>
+                                <option value="4">3 Nights / 4 Days (Shimla-Tattapani)</option>
+                                <option value="5">4 Nights / 5 Days</option>
+                                <option value="6">5 Nights / 6 Days</option>
+                                <option value="7">6 Nights / 7 Days</option>
+                                <option value="8">7 Nights / 8 Days (Taj + Himalaya)</option>
+                                <option value="9" selected>8 Nights / 9 Days (Heaven Himachal)</option>
+                                <option value="12">11 Nights / 12 Days (Char Dham Yatra)</option>
+                                <option value="18">17 Nights / 18 Days (Spiti-Leh-Srinagar)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- TRAVELER COUNT -->
+                    <div>
+                        <div class="flex justify-between items-center font-bold text-slate-700 uppercase mb-1">
+                            <span>Travelers Count (1 to 100 Pax):</span>
+                            <input type="number" id="calc-pax-num" name="travelers_count" min="1" max="100" value="4" oninput="syncPaxInput()" class="w-20 bg-irctc-lightBlue border border-irctc-orange text-center text-irctc-navy font-bold py-1 rounded">
+                        </div>
+                        <input type="range" min="1" max="100" value="4" id="calc-pax-slider" oninput="syncPaxSlider()" class="w-full accent-irctc-orange cursor-pointer">
+                    </div>
+
+                    <!-- VEHICLE SELECTION -->
+                    <div>
+                        <label class="block font-bold text-slate-700 uppercase mb-1">Vehicle Selection & Model</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
+                            <button type="button" onclick="selectVehicleCategory('sedan')" id="vbtn-sedan" class="v-cat-btn bg-white border border-slate-300 text-slate-600 font-bold p-2 rounded text-[11px] text-center">Sedan (Dzire/Etios)</button>
+                            <button type="button" onclick="selectVehicleCategory('suv')" id="vbtn-suv" class="v-cat-btn bg-irctc-lightBlue border border-irctc-blue text-irctc-navy font-bold p-2 rounded text-[11px] text-center">7-Seater SUV (Innova)</button>
+                            <button type="button" onclick="selectVehicleCategory('tempo')" id="vbtn-tempo" class="v-cat-btn bg-white border border-slate-300 text-slate-600 font-bold p-2 rounded text-[11px] text-center">12 to 25 Seater Tempo Traveller</button>
+                            <button type="button" onclick="selectVehicleCategory('coach')" id="vbtn-coach" class="v-cat-btn bg-white border border-slate-300 text-slate-600 font-bold p-2 rounded text-[11px] text-center">Luxury Sleeper Coach</button>
+                        </div>
+
+                        <!-- VEHICLE PREVIEW -->
+                        <div class="bg-irctc-lightBlue p-3 rounded border border-slate-300 flex items-center gap-4">
+                            <img id="vehicle-img" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80" alt="Vehicle Preview" class="w-24 h-16 object-cover rounded border border-slate-200">
+                            <div>
+                                <h4 id="vehicle-title" class="font-bold text-irctc-navy text-sm">Toyota Innova Crysta / Ertiga (7-Seater SUV)</h4>
+                                <p id="vehicle-desc" class="text-slate-600 text-[11px]">Spacious & comfortable for 4-6 passengers with high ground clearance for mountain roads.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HOTEL CATEGORY & MEAL PLAN -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-slate-200 pt-3">
+                        <div>
+                            <label class="block font-bold text-slate-700 uppercase mb-1">Accommodation Tier</label>
+                            <select id="calc-hotel-tier" name="hotel_tier" onchange="recalculateTrip()" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none">
+                                <option value="2star">2★ Budget Hotel (Economy)</option>
+                                <option value="3star" selected>3★ Deluxe Hotel & Camps (Standard)</option>
+                                <option value="4star">4★ Premium Resort & Beachfront Stays</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-slate-700 uppercase mb-1">Meal Plan Preference</label>
+                            <select id="calc-meals" name="meal_plan" onchange="recalculateTrip()" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 font-medium focus:border-irctc-blue focus:outline-none">
+                                <option value="map" selected>MAP (Breakfast + Dinner)</option>
+                                <option value="cp">CP (Breakfast Only)</option>
+                                <option value="ap">AP (All Meals Included)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ESTIMATED COST SUMMARY BOX & SUBMIT BUTTON -->
+                <div class="lg:col-span-5 bg-irctc-lightBlue p-6 rounded border border-slate-300 flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="text-xs font-bold text-slate-600 uppercase">Estimated Total Amount</span>
+                        <h3 id="calc-total-price" class="text-3xl sm:text-4xl font-extrabold text-irctc-navy font-heading mt-1">₹ 99,000</h3>
+                        <p class="text-xs text-slate-600 mt-1">Per Person Rate: <span id="calc-per-person" class="font-bold text-irctc-orange">₹ 24,750</span></p>
+                    </div>
+
+                    <div class="bg-white p-3 rounded border border-slate-200 space-y-1.5 text-[11px] text-slate-700">
+                        <p class="font-bold text-irctc-navy uppercase border-b border-slate-100 pb-1">Included In Fare:</p>
+                        <p><i class="fa-solid fa-check text-emerald-600 mr-1"></i> Private Vehicle & Driver Allowance</p>
+                        <p><i class="fa-solid fa-check text-emerald-600 mr-1"></i> Hotel Stay (Selected Accommodation Tier)</p>
+                        <p><i class="fa-solid fa-check text-emerald-600 mr-1"></i> Fuel, Toll Tax, State Permits & Parking</p>
+                        <p><i class="fa-solid fa-check text-emerald-600 mr-1"></i> Direct Copy to mytripdestinationstours@gmail.com</p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <button type="submit" id="submitBtn" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-3.5 rounded text-xs uppercase tracking-wider shadow transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-sm"></i> Submit Lead Form To Email & Get Quote
+                        </button>
+                        <a href="tel:+917876791618" class="w-full bg-irctc-navy text-white text-center font-bold py-2.5 rounded text-xs block transition">
+                            <i class="fa-solid fa-phone text-irctc-gold mr-1"></i> Call Official 24x7 Helpline +91 78767 91618
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- DESTINATION PACKAGES CATALOGUE -->
+    <section id="destinations" class="py-12 px-4 sm:px-6 max-w-7xl mx-auto">
+        <div class="mb-8">
+            <span class="bg-irctc-navy text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Pan-India Destinations Directory</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-bold text-irctc-navy mt-1">Featured Tour Packages</h2>
+            <p class="text-xs text-slate-600 mt-1">All Himachal Circuits firstly, followed by Taj with Himalaya, Spiti, Kashmir, Uttarakhand, Leh, Rajasthan, Kerala, Sikkim & Andaman Islands.</p>
+        </div>
+
+        <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Injected via JavaScript -->
+        </div>
+    </section>
+
+    <!-- B2B TRAVEL AGENT REGISTRATION & LOGIN PORTAL -->
+    <section id="agent-portal" class="py-12 bg-irctc-navy text-white px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-8">
+                <span class="bg-irctc-gold text-irctc-navy text-[10px] font-bold px-2.5 py-1 rounded uppercase">B2B Agent Portal</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold mt-1">Sign Up & Login for Travel Agents</h2>
+                <p class="text-xs text-slate-300 mt-1">Get net B2B rates, instant voucher generation, and priority cab/hotel allocations across Pan-India circuits.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- AGENT SIGN UP -->
+                <div class="bg-white/10 p-6 rounded-lg border border-white/20 text-xs space-y-3">
+                    <h3 class="font-heading font-bold text-base text-irctc-gold flex items-center gap-2"><i class="fa-solid fa-user-plus"></i> Sign Up as a Travel Agent</h3>
+                    <p class="text-slate-300">Register your travel agency to receive special B2B tariff sheets and direct booking commissions.</p>
+                    <input type="text" placeholder="Agency / Company Name *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                    <input type="text" placeholder="Contact Person Name *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="tel" placeholder="Mobile / Whats App *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                        <input type="email" placeholder="Agency Email ID *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                    </div>
+                    <button onclick="alert('Agent Registration Submitted! Our B2B desk will contact you within 2 hours.')" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-2.5 rounded uppercase tracking-wider transition">Register Agency</button>
+                </div>
+
+                <!-- AGENT LOGIN -->
+                <div class="bg-white/10 p-6 rounded-lg border border-white/20 text-xs space-y-3 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading font-bold text-base text-irctc-gold flex items-center gap-2 mb-2"><i class="fa-solid fa-right-to-bracket"></i> Agent Login Portal</h3>
+                        <p class="text-slate-300 mb-3">Existing registered travel partners can log in to manage active bookings and vouchers.</p>
+                        <input type="text" placeholder="Registered Email / Agent ID *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none mb-3">
+                        <input type="password" placeholder="Password *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none mb-3">
+                        <button onclick="alert('B2B Login Desk: Please enter valid credentials or contact +91 78767 91618 for password reset.')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded uppercase tracking-wider transition">Agent Sign In</button>
+                    </div>
+                    <p class="text-[10px] text-slate-400 text-center">For urgent B2B queries, email us at mytripdestinationstours@gmail.com or Whats App +91 78767 91618</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HELP & GUIDANCE FAQ SECTION -->
+    <section id="faq-section" class="py-12 bg-white border-b border-slate-200 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <span class="bg-irctc-orange text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Help & Guidance</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-irctc-navy mt-1">Frequently Asked Questions (FAQ)</h2>
+            </div>
+
+            <div class="space-y-3 text-xs">
+                <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
+                    <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> How can I book a tour package with My Trip Destinations Tours?</h4>
+                    <p class="text-slate-600">You can use our Custom Fare Estimator above to submit a lead form directly to mytripdestinationstours@gmail.com or contact our Shimla office via WhatsApp/Call at +91 78767 91618.</p>
+                </div>
+
+                <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
+                    <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> Are all taxes, driver charges, and state permits included in the package cost?</h4>
+                    <p class="text-slate-600">Yes! All our calculated rates include vehicle fuel, driver allowance, toll taxes, state border permits, parking, and selected accommodation stays with specified meal plans.</p>
+                </div>
+
+                <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
+                    <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> Is My Trip Destinations Tours officially registered?</h4>
+                    <p class="text-slate-600">Yes, we are a Govt. Approved Travel Company registered with the Department of Tourism & Civil Aviation, Himachal Pradesh (Reg. No. 11-1786/2021-DTO-SML).</p>
+                </div>
+
+                <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
+                    <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> How do I register as a B2B Travel Agent?</h4>
+                    <p class="text-slate-600">Scroll to the Agent Portal section, fill in your agency details in the "Sign Up as a Travel Agent" form, or call our B2B desk directly at +91 78767 91618.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE REVIEWS SECTION -->
+    <section id="reviews" class="py-12 bg-irctc-grayBg px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="bg-irctc-orange text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Verified Customer Feedback</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-irctc-navy mt-1">4.9★ Rated on Google (45 Reviews)</h2>
+                <p class="text-xs text-slate-600 mt-1">Read genuine feedback from travelers who booked their holidays with My Trip Destinations Tours.</p>
+                
+                <div class="mt-4 flex justify-center">
+                    <a href="https://www.google.com/search?q=My+Trip+Destinations+Tours+Shimla+reviews" target="_blank" class="inline-flex items-center gap-2 bg-irctc-navy hover:bg-slate-800 text-white font-bold text-xs px-6 py-3 rounded shadow transition">
+                        <i class="fa-brands fa-google text-irctc-gold text-base"></i> Read All 45 Google Reviews
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- REVIEWS CARDS -->
+                <div class="bg-white p-5 rounded border border-slate-200 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <div class="text-irctc-orange text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded"><i class="fa-brands fa-google mr-1 text-irctc-orange"></i> Google Review</span>
+                    </div>
+                    <p class="text-xs text-slate-700 italic">"Our Shimla, Naldehra & Tattapani river activity trip with My Trip Destinations Tours was seamlessly organized. Driver Sunil was extremely punctual, safe on mountain curves, and stays were excellent!"</p>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[11px]">
+                        <span class="font-bold text-irctc-navy">Avijit Ganguly</span>
+                        <span class="text-slate-500">Shimla Tattapani Tour</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded border border-slate-200 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <div class="text-irctc-orange text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded"><i class="fa-brands fa-google mr-1 text-irctc-orange"></i> Google Review</span>
+                    </div>
+                    <p class="text-xs text-slate-700 italic">"Booked a 12 to 25 Seater Tempo Traveller for our large group to Spiti Valley, Havelock Andaman & Taj Agra via mytripdestinationstours.in. Clean vehicle, courteous driver, zero hidden costs."</p>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[11px]">
+                        <span class="font-bold text-irctc-navy">Anand Maskara</span>
+                        <span class="text-slate-500">Spiti & Andaman Group</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded border border-slate-200 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <div class="text-irctc-orange text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded"><i class="fa-brands fa-google mr-1 text-irctc-orange"></i> Google Review</span>
+                    </div>
+                    <p class="text-xs text-slate-700 italic">"Prompt 24/7 support from the Shimla office. Kashmir houseboat, Kerala backwaters, and Andaman resorts were clean with great views. Highly recommended!"</p>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-[11px]">
+                        <span class="font-bold text-irctc-navy">Jayanti Joshi</span>
+                        <span class="text-slate-500">Multi-State Tour</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEGAL & INFO MODAL POPUP -->
+    <div id="legalModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white text-slate-800 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl">
+            <div class="bg-irctc-navy text-white p-4 flex justify-between items-center">
+                <h3 id="legal-modal-title" class="font-heading text-lg font-bold">Information</h3>
+                <button onclick="closeLegalModal()" class="text-white text-2xl font-bold">&times;</button>
+            </div>
+            <div id="legal-modal-body" class="p-6 overflow-y-auto space-y-4 text-xs text-slate-700 leading-relaxed custom-scrollbar flex-1">
+                <!-- Content injected via JS -->
+            </div>
+            <div class="p-4 bg-irctc-lightBlue border-t border-slate-200 text-right">
+                <button onclick="closeLegalModal()" class="bg-irctc-navy text-white font-bold px-6 py-2 rounded text-xs">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- THANK YOU MODAL PAGE -->
+    <div id="thanksModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white text-slate-800 rounded-xl max-w-lg w-full overflow-hidden shadow-2xl transform transition-all text-center">
+            
+            <div class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-6 space-y-2">
+                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2 text-3xl">
+                    <i class="fa-solid fa-circle-check text-white"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold">Thank You For Your Booking Enquiry!</h3>
+                <p class="text-xs text-emerald-100">Your enquiry has been successfully mailed to <strong>mytripdestinationstours@gmail.com</strong></p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs text-slate-700">
+                <div class="bg-irctc-lightBlue p-4 rounded-lg border border-slate-200 text-left space-y-2">
+                    <p class="font-bold text-irctc-navy text-sm border-b border-slate-200 pb-1 flex justify-between">
+                        <span>Lead Reference Summary</span>
+                        <span class="text-emerald-600"><i class="fa-solid fa-check"></i> Sent</span>
+                    </p>
+                    <p><strong>Guest Name:</strong> <span id="thanks-name" class="text-irctc-navy font-bold"></span></p>
+                    <p><strong>Phone / Whats App:</strong> <span id="thanks-phone"></span></p>
+                    <p><strong>Travel Date:</strong> <span id="thanks-date" class="text-irctc-navy font-bold"></span></p>
+                    <p><strong>Destination:</strong> <span id="thanks-dest"></span></p>
+                    <p><strong>Estimated Package Fare:</strong> <span id="thanks-total" class="text-irctc-orange font-bold text-sm"></span></p>
+                </div>
+
+                <p class="text-slate-600 leading-relaxed">
+                    Our Shimla Reservation Office team will review your travel details and send the official customized voucher to your email shortly.
+                </p>
+
+                <div class="space-y-2 pt-2">
+                    <button onclick="sendThanksToWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Also Connect Instantly On Whats App
+                    </button>
+                    <button onclick="closeThanksModal()" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 rounded text-xs">
+                        Close & Continue Browsing
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ITINERARY MODAL -->
+    <div id="pkg-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white text-slate-800 rounded-lg max-w-4xl w-full max-h-[92vh] overflow-hidden flex flex-col shadow-2xl">
+            
+            <div class="bg-irctc-navy text-white p-4 flex justify-between items-center">
+                <div>
+                    <span id="modal-badge" class="bg-irctc-orange text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Package</span>
+                    <h3 id="modal-title" class="font-heading text-lg font-bold mt-1">Package Title</h3>
+                </div>
+                <button onclick="closeModal()" class="text-white text-2xl font-bold">&times;</button>
+            </div>
+
+            <div class="p-6 overflow-y-auto space-y-6 text-xs custom-scrollbar flex-1">
+                <!-- OVERVIEW -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-irctc-lightBlue p-3 rounded text-center border border-slate-200">
+                    <div><span class="text-slate-500 block">Duration</span><strong id="modal-duration" class="text-irctc-navy">9 Days</strong></div>
+                    <div><span class="text-slate-500 block">Base Price</span><strong id="modal-price" class="text-irctc-orange">₹ 22,500</strong></div>
+                    <div><span class="text-slate-500 block">Pickup & Drop</span><strong id="modal-pickup" class="text-irctc-navy">Chandigarh/Delhi</strong></div>
+                    <div><span class="text-slate-500 block">Stay</span><strong id="modal-stay" class="text-irctc-navy">Hotels & Resorts</strong></div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1 uppercase">Trip Overview</h4>
+                    <p id="modal-desc" class="text-slate-600 leading-relaxed"></p>
+                </div>
+
+                <!-- INDIVIDUAL CALCULATOR INSIDE MODAL -->
+                <div class="bg-gradient-to-r from-irctc-navy to-irctc-blue text-white p-4 rounded-lg shadow space-y-4">
+                    <div class="flex justify-between items-center border-b border-slate-700 pb-2">
+                        <h4 class="font-bold text-irctc-gold text-xs uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-calculator"></i> Customize & Calculate Fare For This Package
+                        </h4>
+                        <span class="text-[10px] text-slate-300">Live Dynamic Estimator</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-slate-800 text-[11px]">
+                        <div>
+                            <label class="block font-bold text-white uppercase mb-1">Travelers (Pax):</label>
+                            <input type="number" id="modal-pax" min="1" max="100" value="4" oninput="recalcModalPrice()" class="w-full bg-white border border-slate-300 rounded p-2 font-bold text-irctc-navy text-center">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-white uppercase mb-1">Accommodation Tier:</label>
+                            <select id="modal-hotel-tier" onchange="recalcModalPrice()" class="w-full bg-white border border-slate-300 rounded p-2 font-medium">
+                                <option value="0.75">2★ Budget Hotel</option>
+                                <option value="1" selected>3★ Deluxe Hotel & Camps</option>
+                                <option value="1.3">4★ Premium Resort (+30%)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-white uppercase mb-1">Meal Plan:</label>
+                            <select id="modal-meal-plan" onchange="recalcModalPrice()" class="w-full bg-white border border-slate-300 rounded p-2 font-medium">
+                                <option value="map" selected>MAP (Breakfast + Dinner)</option>
+                                <option value="cp">CP (Breakfast Only)</option>
+                                <option value="ap">AP (All Meals)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-bold text-white uppercase mb-1">Vehicle Category:</label>
+                            <select id="modal-veh-cat" onchange="recalcModalPrice()" class="w-full bg-white border border-slate-300 rounded p-2 font-medium">
+                                <option value="sedan">Sedan (Dzire / Etios)</option>
+                                <option value="suv" selected>7-Seater SUV (Innova / Ertiga)</option>
+                                <option value="tempo">12 to 25 Seater Tempo Traveller</option>
+                                <option value="coach">Luxury Sleeper Coach</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/10 p-3 rounded flex justify-between items-center text-xs border border-white/20">
+                        <div>
+                            <span class="text-slate-300 block text-[10px] uppercase">Customized Total Price:</span>
+                            <strong id="modal-calc-total" class="text-xl font-bold text-irctc-gold">₹ 0</strong>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-slate-300 block text-[10px] uppercase">Rate Per Person:</span>
+                            <strong id="modal-calc-perperson" class="text-sm font-bold text-white">₹ 0</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-irctc-navy text-sm mb-2 uppercase">Day-Wise Itinerary Details</h4>
+                    <div id="modal-daywise" class="space-y-3"></div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-slate-200 pt-3">
+                    <div>
+                        <strong class="text-emerald-700 block mb-1 uppercase"><i class="fa-solid fa-check"></i> Inclusions</strong>
+                        <ul id="modal-inclusions" class="space-y-1 text-slate-600"></ul>
+                    </div>
+                    <div>
+                        <strong class="text-rose-700 block mb-1 uppercase"><i class="fa-solid fa-xmark"></i> Exclusions</strong>
+                        <ul id="modal-exclusions" class="space-y-1 text-slate-600"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 bg-irctc-lightBlue border-t border-slate-200 flex flex-col sm:flex-row gap-3">
+                <button onclick="bookModalPackage()" class="flex-1 bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-2.5 rounded text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Confirm Custom Package On Whats App
+                </button>
+                <button onclick="closeModal()" class="bg-slate-300 hover:bg-slate-400 text-slate-800 font-bold px-5 py-2.5 rounded text-xs">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MAIN FOOTER SECTION WITH UPDATED 3 COLUMNS -->
+    <footer class="bg-slate-950 text-slate-300 text-xs py-12 px-4 sm:px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            
+            <!-- COLUMN 1: COMPANY & ADDRESS -->
+            <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <img src="mtdt logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-irctc-gold object-cover">
+                    <h3 class="font-heading font-bold text-white text-sm">MY TRIP DESTINATIONS TOURS</h3>
+                </div>
+                <p class="text-slate-400 leading-relaxed text-[11px]">
+                    Govt. Approved Travel Company (Reg. No. 11-1786/2021-DTO-SML). Registered under HP Tourism Department. Your trusted partner for mountain & coastal holidays across India.
+                </p>
+                <div class="text-[11px] space-y-1 text-slate-400 pt-1">
+                    <p><strong class="text-white">Main Office Address:</strong> Regd.Office Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</p>
+                    <p><strong class="text-white">Website:</strong> mytripdestinationstours.in</p>
+                </div>
+            </div>
+
+            <!-- COLUMN 2: COMPANY INFORMATION -->
+            <div class="space-y-2">
+                <h4 class="font-bold text-irctc-gold text-sm uppercase tracking-wider mb-2">Company Information</h4>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><button onclick="openLegalModal('about')" class="hover:text-irctc-orange transition text-left">• About My Trip Destinations Tours</button></li>
+                    <li><a href="tel:+917876791618" class="hover:text-irctc-orange transition">• Contact Us (+91 78767 91618)</a></li>
+                    <li><a href="https://www.google.com/search?q=My+Trip+Destinations+Tours+Shimla+reviews" target="_blank" class="hover:text-irctc-orange transition">• Google Reviews (4.9★ Rating)</a></li>
+                    <li><button onclick="openLegalModal('verification')" class="hover:text-irctc-orange transition text-left">• Government Credential Verification</button></li>
+                    <li><a href="#destinations" class="hover:text-irctc-orange transition">• Pan-India Tour Packages</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 3: LEGAL & SUPPORT -->
+            <div class="space-y-2">
+                <h4 class="font-bold text-irctc-gold text-sm uppercase tracking-wider mb-2">Legal & Support</h4>
+                <ul class="space-y-1.5 text-slate-400">
+                    <li><button onclick="openLegalModal('terms')" class="hover:text-irctc-orange transition text-left">• Terms & Conditions</button></li>
+                    <li><button onclick="openLegalModal('privacy')" class="hover:text-irctc-orange transition text-left">• Privacy Policies</button></li>
+                    <li><a href="tel:+917876791618" class="hover:text-irctc-orange transition">• 24*7 Direct Call (+91 78767 91618)</a></li>
+                    <li><a href="mailto:mytripdestinationstours@gmail.com" class="hover:text-irctc-orange transition">• Email: mytripdestinationstours@gmail.com</a></li>
+                    <li><a href="#agent-portal" class="hover:text-irctc-orange transition">• Travel Agent Registration & Login</a></li>
+                    <li><button onclick="openLegalModal('fraud')" class="hover:text-irctc-orange transition text-rose-400 font-bold text-left">• Beware of Frauds (Official Only)</button></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-2">
+            <p>© 2026 My Trip Destinations Tours (mytripdestinationstours.in). All rights reserved.</p>
+            <p>Himachal Pradesh Government Approved • Reg. No. 11-1786/2021-DTO-SML</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT ENGINE -->
+    <script>
+        const officialLeadMail = 'mytripdestinationstours@gmail.com';
+
+        const packageSequence = [
+            'shimla-naldehra-tattapani-4d', 'heaven-himachal-8n', 'heaven-himachal-golden',
+            'dharamshala-dalhousie-circuit', 'kinnaur-orchard-trail', 'shimla-kullu-manali',
+            'kasol-shimla-manali', 'mystic-manali-volvo', 'shimla-queen', 'taj-with-himalaya',
+            'spiti-cold-desert', 'spiti-leh-18d-delhi', 'kashmir-paradise-5n', 'kashmir-houseboat-special',
+            'kashmir-srinagar-gulmarg-sonamarg', 'kashmir-gurez-valley-offbeat', 'kashmir-winter-skiing-gulmarg',
+            'uttarakhand-4dham', 'uttarakhand-nainital-mussoorie', 'haridwar-rishikesh-mussoorie',
+            'uttarakhand-auli-skiing-chopta', 'uttarakhand-valley-of-flowers', 'silk-route-leh',
+            'leh-landscapes', 'leh-hanle-dark-sky-reserve', 'leh-sham-valley-cultural',
+            'rajasthan-royal-heritage', 'rajasthan-jaisalmer-desert', 'rajasthan-grand-circuit',
+            'rajasthan-ranthambore-tiger-safari', 'rajasthan-udaipur-mount-abu', 'rajasthan-bikaner-jaisalmer-trail',
+            'rajasthan-chittorgarh-kumbhalgarh', 'kerala-backwaters-munnar', 'kerala-wayanad-coffee-estates',
+            'kerala-kovalam-trivandrum-coastal', 'sikkim-gangtok-darjeeling', 'andaman-island-hopping',
+            'andaman-scuba-neil-island', 'andaman-family-baratang-cave', 'golden-triangle-5n',
+            'goa-coastal-getaway', 'kolkata-sundarbans-safari'
+        ];
+
+        const packages = {
+            'shimla-naldehra-tattapani-4d': {
+                id: 'shimla-naldehra-tattapani-4d', title: '1. Shimla, Naldehra & Tattapani River Activity Circuit', duration: '3 Nights / 4 Days', daysNum: 4, price: 9800, badge: 'HOT SPRINGS & RIVER', pickup: 'Shimla / Chandigarh', stay: '3-Star Valley View Resort', img: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80', desc: 'Scenic circuit covering Shimla Ridge & Kufri, cedar pine glades in Naldehra, and Sutlej river water sports & natural hot sulfur springs at Tattapani.',
+                daywise: [
+                    { day: 'Day 1', title: 'Arrival Shimla & Mall Road Evening', desc: 'Pickup and check-in at hotel. Evening heritage walk on Mall Road, Ridge, and Christ Church.' },
+                    { day: 'Day 2', title: 'Kufri & Fagu Valley Tour', desc: 'Explore Kufri fun world, Mahasu Peak viewpoint, and scenic pine valley views at Fagu.' },
+                    { day: 'Day 3', title: 'Naldehra Golf Glades & Tattapani', desc: 'Drive via Naldehra cedar forests to Tattapani on Sutlej river banks. Natural hot springs and river activities.' },
+                    { day: 'Day 4', title: 'Jakhoo Temple & Departure Drop', desc: 'Jakhoo Hanuman Temple cable car ride, Viceregal Lodge, and Chandigarh/Shimla return drop.' }
+                ],
+                inclusions: ['3 Nights Hotel Accommodation', 'Private Cab for Sightseeing', 'Daily MAP Meals (Breakfast & Dinner)'], exclusions: ['River rafting & water activity charges at Tattapani', 'Pony/Cable car tickets']
+            },
+            'heaven-himachal-8n': {
+                id: 'heaven-himachal-8n', title: '2. Heaven Himachal Circuit', duration: '8 Nights / 9 Days', daysNum: 9, price: 22500, badge: 'HIMACHAL GRAND TOUR', pickup: 'Chandigarh / Delhi', stay: '4-Star Mountain Resorts', img: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=600&q=80', desc: 'Comprehensive Himachal journey: Shimla, Kufri, Manali, Solang Valley, Atal Tunnel Sissu, Dharamshala McLeodganj Dalai Lama Temple & Dalhousie Khajjiar.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Shimla & Kufri Excursion', desc: 'Arrival Shimla, Kufri adventure, Ridge walk, Viceregal Lodge.' },
+                    { day: 'Day 3-5', title: 'Manali, Atal Tunnel & Kullu Valley', desc: 'Scenic Kullu drive, Hadimba temple, Solang snow view, Sissu Lahaul trip.' },
+                    { day: 'Day 6-7', title: 'Dharamshala & McLeodganj', desc: 'Dalai Lama Temple, Bhagsu waterfall, and HPCA Cricket Stadium.' },
+                    { day: 'Day 8-9', title: 'Dalhousie, Khajjiar & Departure', desc: 'Khajjiar mini-Switzerland pine meadow walk, Chamera lake, Pathankot/Chandigarh drop.' }
+                ],
+                inclusions: ['8 Nights Resort Stay', 'Private Vehicle Throughout', 'Daily Breakfast & Dinner'], exclusions: ['Entry fees & adventure sports charges']
+            },
+            'heaven-himachal-golden': {
+                id: 'heaven-himachal-golden', title: '3. Heavenly Himachal With Golden Temple Amritsar', duration: '9 Nights / 10 Days', daysNum: 10, price: 25800, badge: 'HERITAGE & HILLS', pickup: 'Delhi / Chandigarh', stay: '4-Star Premium Hotels', img: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=600&q=80', desc: 'Complete Himachal mountain circuit combined with holy Golden Temple night view, Jallianwala Bagh, and Wagah Border ceremony in Amritsar.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Shimla Kufri Walk', desc: 'Mall Road, Jakhoo Temple cable car, and Kufri snow views.' },
+                    { day: 'Day 3-5', title: 'Manali, Solang & Atal Tunnel', desc: 'Hadimba Temple, Solang valley views, Atal Tunnel Sissu, Kullu valley.' },
+                    { day: 'Day 6-7', title: 'Dharamshala & Dalhousie Khajjiar', desc: 'McLeodganj monasteries and Khajjiar pine forests.' },
+                    { day: 'Day 8-9', title: 'Amritsar Golden Temple & Wagah Border', desc: 'Drive to Amritsar, Wagah border parade ceremony, Golden Temple illuminated viewing.' },
+                    { day: 'Day 10', title: 'Jallianwala Bagh & Departure', desc: 'Historical Jallianwala Bagh visit and drop at Amritsar Station/Airport.' }
+                ],
+                inclusions: ['9 Nights Hotel Stay', 'Private Vehicle Throughout', 'Daily Breakfast & Dinner'], exclusions: ['Personal shopping & activity tickets']
+            },
+            'dharamshala-dalhousie-circuit': {
+                id: 'dharamshala-dalhousie-circuit', title: '4. Dharamshala, McLeodganj & Dalhousie Khajjiar', duration: '4 Nights / 5 Days', daysNum: 5, price: 13500, badge: 'MINI SWITZERLAND', pickup: 'Pathankot / Gaggal Airport / Chandigarh', stay: '3-Star Deluxe Pine View Resorts', img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80', desc: 'Focus on Dhauladhar snow ranges, Dalai Lama Temple in McLeodganj, St. John in Wilderness Church, and Khajjiar pine meadow.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Dharamshala & McLeodganj Monastery', desc: 'Dalai Lama Residence, Tsuglagkhang Complex, Bhagsu Naag Temple, HPCA Stadium.' },
+                    { day: 'Day 3-4', title: 'Dalhousie & Khajjiar Meadow', desc: 'Drive to Dalhousie. Khajjiar Swiss-style meadow & Kalatop wildlife sanctuary.' },
+                    { day: 'Day 5', title: 'Pathankot / Gaggal Drop', desc: 'Local market shopping and departure drop.' }
+                ],
+                inclusions: ['4 Nights Hotel Stay', 'Private Cab for Sightseeing', 'Daily MAP Meals'], exclusions: ['Pony ride & activity charges in Khajjiar']
+            },
+            'kinnaur-orchard-trail': {
+                id: 'kinnaur-orchard-trail', title: '5. Kinnaur Valley, Sarahan, Sangla & Kalpa Trail', duration: '5 Nights / 6 Days', daysNum: 6, price: 16800, badge: 'APPLE ORCHARDS', pickup: 'Shimla / Chandigarh', stay: 'Pine Wood Resorts & Homestays', img: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80', desc: 'Deep mountain exploration of Kinnaur apple orchards, 800-year-old Bhimakali temple, Indo-Tibet border village Chitkul, and Kalpa sunset.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Shimla to Sarahan Bhimakali Temple', desc: 'Drive via Narkanda Hatu peak to Sarahan Shaktipeeth temple.' },
+                    { day: 'Day 3-4', title: 'Sangla, Chitkul & Kamru Fort', desc: 'Baspa river walk, last village Chitkul, and ancient Kamru Fort.' },
+                    { day: 'Day 5-6', title: 'Kalpa Kinner Kailash & Shimla Drop', desc: 'Suicide point Kalpa, sunset views over Kinner Kailash peak, return drop.' }
+                ],
+                inclusions: ['5 Nights Accommodation', 'Private SUV/Cab', 'Daily Breakfast & Dinner'], exclusions: ['Personal expenses & entry fees']
+            },
+            'shimla-kullu-manali': {
+                id: 'shimla-kullu-manali', title: '6. Best of Shimla Kullu Manali Ex Delhi', duration: '5 Nights / 6 Days', daysNum: 6, price: 11500, badge: 'BEST SELLER', pickup: 'Delhi / Chandigarh', stay: '3-Star Deluxe Hotel', img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80', desc: 'Popular budget circuit: 02N Shimla & 03N Manali with Kufri, Kullu valley, Solang Valley & Atal Tunnel.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Delhi to Shimla & Kufri', desc: 'Drive to Shimla, Mall Road walk, Jakhoo Temple and Kufri snow viewpoint.' },
+                    { day: 'Day 3-5', title: 'Manali & Solang Atal Tunnel', desc: 'Hadimba temple, Vashisht hot springs, Solang sports, and Sissu Lahaul valley.' },
+                    { day: 'Day 6', title: 'Kullu Valley & Delhi Drop', desc: 'Drive through Kullu valley and return transfer to Delhi/Chandigarh.' }
+                ],
+                inclusions: ['02N Shimla + 03N Manali Stay', 'Private Sedan/SUV', 'Daily Breakfast & Dinner'], exclusions: ['Rafting & adventure activity charges']
+            },
+            'kasol-shimla-manali': {
+                id: 'kasol-shimla-manali', title: '7. Best of Shimla Kullu Manali With Kasol', duration: '6 Nights / 7 Days', daysNum: 7, price: 14000, badge: 'PARVATI VALLEY', pickup: 'Delhi / Chandigarh', stay: '3-Star Hotel & Kasol Camp', img: 'https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=600&q=80', desc: 'Complete Himachal vacation including Parvati Valley, Kasol riverside cafes, Manikaran Sahib Gurudwara, Shimla & Manali.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Shimla Kufri Exploration', desc: 'Mall road, Ridge, and Kufri pine forests.' },
+                    { day: 'Day 3-5', title: 'Manali, Solang Valley & Atal Tunnel', desc: 'Hadimba temple, Solang snow viewpoint, and Sissu valley.' },
+                    { day: 'Day 6-7', title: 'Kasol & Manikaran Sahib', desc: 'Riverside stay in Kasol, Manikaran hot springs, and Delhi drop.' }
+                ],
+                inclusions: ['6 Nights Stay', 'Kasol Riverside Camp', 'Private Vehicle', 'MAP Meals'], exclusions: ['Personal cafe bills & activity charges']
+            },
+            'mystic-manali-volvo': {
+                id: 'mystic-manali-volvo', title: '8. Mystic Manali by Volvo', duration: '4 Nights / 5 Days', daysNum: 5, price: 6500, badge: 'VOLVO PACKAGE', pickup: 'Delhi ISBT Kashmiri Gate', stay: '3-Star Valley View Hotel', img: 'https://images.unsplash.com/photo-1586375300773-8384e3e4916f?auto=format&fit=crop&w=600&q=80', desc: 'Hassle-free overnight Luxury AC Volvo tickets from Delhi to Manali, local cab sightseeing, Solang Valley, and Atal Tunnel.',
+                daywise: [
+                    { day: 'Day 1', title: 'Overnight Volvo Drive from Delhi', desc: 'Board AC Volvo coach at ISBT Kashmiri Gate (8:00 PM).' },
+                    { day: 'Day 2-4', title: 'Manali, Solang Valley & Atal Tunnel', desc: 'Hotel check-in, Hadimba Temple, Solang viewpoint, and Atal Tunnel Sissu.' },
+                    { day: 'Day 5', title: 'Kullu Valley & Overnight Volvo Return', desc: 'Scenic Kullu drive, evening Volvo boarding back to Delhi.' }
+                ],
+                inclusions: ['Delhi-Manali-Delhi Volvo Tickets', '03 Nights Hotel Stay', 'Private Cab for Sightseeing', 'MAP Meals'], exclusions: ['Personal shopping & adventure sport charges']
+            },
+            'shimla-queen': {
+                id: 'shimla-queen', title: '9. Shimla Queen of Hills Escape', duration: '3 Nights / 4 Days', daysNum: 4, price: 8999, badge: 'TOP PICK', pickup: 'Shimla / Chandigarh', stay: 'Valley View Deluxe Hotel', img: 'https://images.unsplash.com/photo-1562670652-e5947bddb335?auto=format&fit=crop&w=600&q=80', desc: 'Scenic stay in Shimla with Kufri snow point visit, Mall Road walk, Jakhoo Temple cable car, and Viceregal Lodge.',
+                daywise: [
+                    { day: 'Day 1', title: 'Arrival Shimla & Hotel Check-in', desc: 'Pickup by driver Mr. Sunil. Hotel check-in and evening Mall Road & Ridge walk.' },
+                    { day: 'Day 2', title: 'Kufri & Fagu Valley Excursion', desc: 'Drive to Kufri snow point. Enjoy Fagu pine valley views.' },
+                    { day: 'Day 3-4', title: 'Jakhoo Hill & Departure', desc: 'Jakhoo Temple cable car ride, Viceregal Lodge, and departure drop-off.' }
+                ],
+                inclusions: ['3 Nights Stay in Shimla', 'Daily Breakfast & Dinner', 'Private Cab for Sightseeing'], exclusions: ['Pony rides & cable car ticket charges']
+            },
+            'taj-with-himalaya': {
+                id: 'taj-with-himalaya', title: '10. Taj with Himalaya Circuit', duration: '7 Nights / 8 Days', daysNum: 8, price: 24500, badge: 'HERITAGE + MOUNTAINS', pickup: 'Delhi Airport / Station', stay: '4-Star Hotels & Resorts', img: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80', desc: 'Combines the world wonder Taj Mahal in Agra with Delhi historical monuments, followed by Shimla, Kullu, Manali, Solang Valley & Atal Tunnel.',
+                daywise: [
+                    { day: 'Day 1', title: 'Delhi Arrival & City Tour', desc: 'Pickup at Delhi, visit Qutub Minar, India Gate, Lotus Temple, and Red Fort.' },
+                    { day: 'Day 2', title: 'Delhi to Agra Taj Mahal & Agra Fort', desc: 'Drive via Yamuna Expressway to Agra. Visit Taj Mahal at sunset and Agra Fort.' },
+                    { day: 'Day 3', title: 'Agra to Shimla via Delhi', desc: 'Morning drive to Shimla foothills. Check-in and evening Mall Road walk.' },
+                    { day: 'Day 4-5', title: 'Shimla Kufri to Manali Drive', desc: 'Visit Kufri snow point, Jakhoo Temple, drive past Pandoh Dam to Manali.' },
+                    { day: 'Day 6-7', title: 'Manali, Solang Valley & Atal Tunnel', desc: 'Hadimba Temple, Solang viewpoint, Atal Tunnel Sissu & Kullu valley drive.' },
+                    { day: 'Day 8', title: 'Return to Delhi Departure', desc: 'Breakfast and drive back to Delhi Airport / Railway Station drop.' }
+                ],
+                inclusions: ['Agra, Shimla & Manali Stays', 'Private Sedan/SUV Cab', 'Daily MAP Meals Plan'], exclusions: ['Taj Mahal entry ticket & activity charges']
+            },
+            'spiti-cold-desert': {
+                id: 'spiti-cold-desert', title: '11. Spiti Valley Cold Desert 4x4 Circuit', duration: '8 Nights / 9 Days', daysNum: 9, price: 23500, badge: '4x4 ADVENTURE', pickup: 'Manali / Sarahan / Shimla', stay: 'Boutique Homestays & Tents', img: 'https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=600&q=80', desc: 'High altitude cold desert road trip covering Sarahan, Kalpa, Nako, Tabo, Kaza, Key Monastery, Hikkim & Chandratal Lake.',
+                daywise: [
+                    { day: 'Day 1-3', title: 'Shimla to Sarahan & Kalpa', desc: 'Sutlej river valley drive, Suicide point Kalpa, and Apple orchard homestays.' },
+                    { day: 'Day 4-6', title: 'Kaza, Key Monastery & Hikkim', desc: 'Visit 1000 yr Tabo monastery, world\'s highest post office Hikkim, and Chicham bridge.' },
+                    { day: 'Day 7-9', title: 'Chandratal Lake & Manali Drop', desc: 'Camp near Chandratal turquoise lake, cross Kunzum Pass & Atal Tunnel to Manali.' }
+                ],
+                inclusions: ['4x4 SUV / Tempo Traveller', '8 Nights Stay', 'Daily MAP Meals', 'Inner Line Permits'], exclusions: ['Personal expenses & optional activities']
+            },
+            'spiti-leh-18d-delhi': {
+                id: 'spiti-leh-18d-delhi', title: '12. Spiti Valley + Leh Ladakh + Srinagar Grand Circuit (Ex-Delhi)', duration: '17 Nights / 18 Days', daysNum: 18, price: 48500, badge: '18D GRAND EXPEDITION', pickup: 'Delhi Airport / Station / Hotel', stay: '3-Star Hotels, Homestays & Glamping Camps', img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80', desc: 'Ultimate 18-Day epic expedition starting & ending in Delhi. Covers Shimla, Narkanda, Sarahan, Sangla, Chitkul, Kalpa, Gue Mummy, Tabo, Kaza, Hikkim, Chandratal, Sarchu, Leh, Khardung La, Nubra Valley, Pangong Tso, Kargil War Memorial, Srinagar Houseboat & return to Delhi.',
+                daywise: [
+                    { day: 'Day 1', title: 'Delhi to Shimla Drive', desc: 'Pickup from Delhi. Scenic drive to Shimla, check-in, and Mall Road walk.' },
+                    { day: 'Day 2-4', title: 'Sarahan, Sangla, Chitkul & Kalpa', desc: 'Bhimakali Temple, Baspa river, last border village Chitkul & Kinner Kailash peak.' },
+                    { day: 'Day 5-8', title: 'Tabo, Kaza & Chandratal Lake', desc: 'Gue Mummy, 1000-yr Tabo Monastery, Hikkim post office, and Chandratal camps.' },
+                    { day: 'Day 9-10', title: 'Baralacha La & Sarchu to Leh', desc: 'Traverse Gata Loops, More Plains & Tanglang La Pass into Leh.' },
+                    { day: 'Day 11-14', title: 'Khardung La, Nubra, Pangong Lake', desc: 'Khardung La (18,390 ft), Nubra Hunder dunes, Diskit & turquoise Pangong Lake.' },
+                    { day: 'Day 15-18', title: 'Kargil, Srinagar Houseboat to Delhi', desc: 'Kargil War Memorial, Zoji La Pass, Srinagar Dal Lake Houseboat & drive back to Delhi.' }
+                ],
+                inclusions: ['Private Innova Crysta AC Cab for 18 Days', '17 Nights Accommodation', 'Daily Breakfast & Dinner', 'Inner-Line Permits, Fuel, Tolls & State Tax'], exclusions: ['Monuments / Entry fees', 'Camel / Pony ride charges', 'Airfare / Train tickets']
+            },
+            'kashmir-paradise-5n': {
+                id: 'kashmir-paradise-5n', title: '13. Kashmir Paradise & Gulmarg Snow Escape', duration: '5 Nights / 6 Days', daysNum: 6, price: 19500, badge: 'KASHMIR SPECIAL', pickup: 'Srinagar Airport', stay: 'Dal Lake Houseboat & Deluxe Hotel', img: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=600&q=80', desc: 'Experience Dal Lake sunset Shikara ride, luxury Houseboat stay, Gulmarg snow viewpoint, and Pahalgam Betaab & Aru Valley.',
+                daywise: [
+                    { day: 'Day 1', title: 'Srinagar Arrival & Dal Lake Shikara', desc: 'Pickup at Srinagar Airport. Check-in at luxury Dal Lake Houseboat. Evening Shikara ride.' },
+                    { day: 'Day 2', title: 'Gulmarg Snow Excursion & Gondola Point', desc: 'Drive to Gulmarg. Visit Gondola cable car point for snow viewing.' },
+                    { day: 'Day 3-4', title: 'Pahalgam Valley of Shepherds', desc: 'Saffron fields, Aru Valley, Betaab Valley, Chandanwari, Lidder river walk.' },
+                    { day: 'Day 5-6', title: 'Mughal Gardens & Srinagar Departure', desc: 'Nishat Bagh, Shalimar Bagh, Shankaracharya Temple, and airport drop.' }
+                ],
+                inclusions: ['01 Night Houseboat + 04 Nights Hotel Stay', '1 Sunset Shikara Ride', 'Daily Breakfast & Dinner', 'Private Cab'], exclusions: ['Gondola cable car ticket charges', 'Pony charges']
+            },
+            'kashmir-houseboat-special': {
+                id: 'kashmir-houseboat-special', title: '14. Kashmir Houseboat & Pahalgam Special', duration: '4 Nights / 5 Days', daysNum: 5, price: 16800, badge: 'ROMANTIC GETAWAY', pickup: 'Srinagar Airport', stay: 'Luxury Houseboat & Pahalgam Resort', img: 'https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=600&q=80', desc: 'Romantic Kashmir holiday with 02 nights stay in Dal Lake luxury Houseboat, Shikara ride, Pahalgam Lidder river views, and Mughal Gardens.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Srinagar Houseboat & Mughal Gardens', desc: 'Houseboat check-in, Nishat & Shalimar Gardens, 2-hour Shikara ride.' },
+                    { day: 'Day 3-4', title: 'Pahalgam Valley Stay', desc: 'Drive to Pahalgam via Pampore saffron fields. Visit Baisaran meadow.' },
+                    { day: 'Day 5', title: 'Srinagar Shopping & Airport Drop', desc: 'Pashmina & dry fruits market walk and airport transfer.' }
+                ],
+                inclusions: ['2 Nights Houseboat Stay', '2 Nights Pahalgam Stay', 'Shikara Ride', 'MAP Meals'], exclusions: ['Pony ride charges']
+            },
+            'kashmir-srinagar-gulmarg-sonamarg': {
+                id: 'kashmir-srinagar-gulmarg-sonamarg', title: '15. Grand Kashmir Valley Exploration', duration: '6 Nights / 7 Days', daysNum: 7, price: 22000, badge: 'COMPLETE VALLEY', pickup: 'Srinagar Airport', stay: '3-Star Hotels & Houseboat', img: 'https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=600&q=80', desc: 'Complete Kashmir valley tour covering Srinagar, Gulmarg snow slopes, Pahalgam Aru Valley, and Sonamarg Meadow of Gold Thajiwas Glacier.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Srinagar Houseboat & Shikara', desc: 'Arrival Srinagar, Houseboat check-in, Mughal gardens, Shikara ride.' },
+                    { day: 'Day 3', title: 'Sonamarg Day Trip', desc: 'Excursion to Sonamarg glacier, Thajiwas glacier view, Sind river.' },
+                    { day: 'Day 4-5', title: 'Gulmarg & Pahalgam Valley', desc: 'Gulmarg cable car viewpoint & Pahalgam Lidder valley night stay.' },
+                    { day: 'Day 6-7', title: 'Srinagar Local & Airport Drop', desc: 'Hazratbal Shrine, Old Srinagar markets, and airport drop.' }
+                ],
+                inclusions: ['6 Nights Lodging', 'Shikara Ride', 'Private AC Cab', 'MAP Meals'], exclusions: ['Union cab & pony charges in Sonamarg/Pahalgam']
+            },
+            'kashmir-gurez-valley-offbeat': {
+                id: 'kashmir-gurez-valley-offbeat', title: '16. Offbeat Kashmir & Gurez Valley Expedition', duration: '5 Nights / 6 Days', daysNum: 6, price: 21500, badge: 'OFFBEAT BORDER', pickup: 'Srinagar Airport', stay: 'Boutique Wooden Lodges & Homestays', img: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80', desc: 'Explore the untouched border paradise of Gurez Valley via Razdan Pass (11,672 ft), Habba Khatoon peak, Kishanganga river & Dawar village.',
+                daywise: [
+                    { day: 'Day 1', title: 'Srinagar Arrival & Houseboat Stay', desc: 'Pickup Srinagar airport. Sunset Shikara ride on Dal Lake.' },
+                    { day: 'Day 2-3', title: 'Razdan Pass & Dawar Gurez Valley', desc: 'Cross Razdan Pass, enter Gurez. Visit Habba Khatoon pyramid peak & Kishanganga river.' },
+                    { day: 'Day 4-6', title: 'Tulail Valley & Srinagar Airport Drop', desc: 'Explore remote Tulail border villages, return to Srinagar for airport drop.' }
+                ],
+                inclusions: ['5 Nights Lodging', 'Gurez Border Permits', 'Private Cab', 'MAP Meals'], exclusions: ['Personal expenses & trekking gear']
+            },
+            'kashmir-winter-skiing-gulmarg': {
+                id: 'kashmir-winter-skiing-gulmarg', title: '17. Kashmir Winter Wonderland & Ski Special', duration: '4 Nights / 5 Days', daysNum: 5, price: 18500, badge: 'WINTER SNOW SPECIAL', pickup: 'Srinagar Airport', stay: 'Heated Luxury Resorts', img: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80', desc: 'Winter snow package with central heated rooms, Gulmarg Gondola viewpoint, snow slopes, and frozen Dal Lake views.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Srinagar Heated Houseboat & Gulmarg', desc: 'Heated room stay, frozen Dal Lake views, drive to snow-capped Gulmarg.' },
+                    { day: 'Day 3-5', title: 'Gulmarg Gondola Point & Snow Slopes', desc: 'Visit Gondola point, snow slopes view, return airport drop.' }
+                ],
+                inclusions: ['4 Nights Heated Hotel/Resort Stay', 'Daily MAP Meals', 'Private AC Vehicle'], exclusions: ['Gondola cable car & ski gear rental charges']
+            },
+            'uttarakhand-4dham': {
+                id: 'uttarakhand-4dham', title: '18. Uttarakhand 4 Dham Yatra Pilgrimage', duration: '11 Nights / 12 Days', daysNum: 12, price: 28500, badge: 'PILGRIMAGE SPECIAL', pickup: 'Haridwar / Rishikesh / Delhi', stay: 'Hotel & Ashram Lodging', img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80', desc: 'Sacred pilgrimage to Yamunotri, Gangotri, Kedarnath Trek & Badrinath with mandatory Yatra registrations and priest guidance.',
+                daywise: [
+                    { day: 'Day 1-4', title: 'Haridwar, Yamunotri & Gangotri', desc: 'Drive to Barkot, Yamunotri temple dip, Uttarkashi, and Gangotri Dham.' },
+                    { day: 'Day 5-8', title: 'Kedarnath Dham Trek', desc: 'Sonprayag to Kedarnath temple trek, evening Aarti, and return.' },
+                    { day: 'Day 9-12', title: 'Badrinath & Rishikesh Drop', desc: 'Badrinath temple, Mana village, Ganga Aarti in Rishikesh, and Haridwar drop.' }
+                ],
+                inclusions: ['11 Nights Lodging', 'Yatra Registrations', 'Private Cab', 'MAP Meals'], exclusions: ['Helicopter tickets & pony charges']
+            },
+            'uttarakhand-nainital-mussoorie': {
+                id: 'uttarakhand-nainital-mussoorie', title: '19. Nainital, Mussoorie & Jim Corbett Jungle Safari', duration: '6 Nights / 7 Days', daysNum: 7, price: 17999, badge: 'HILL STATIONS & SAFARI', pickup: 'Delhi Airport / Station', stay: '3-Star Lake View Hotels & Resort', img: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=80', desc: 'Discover Naini Lake, Bhimtal, Mussoorie Kempty Falls, Mall Road, and Jim Corbett Tiger Reserve.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Delhi to Nainital Lake Tour', desc: 'Drive to Nainital. Naini Lake view, Naina Devi Temple, and Tiffin Top.' },
+                    { day: 'Day 3', title: 'Jim Corbett Tiger Reserve', desc: 'Drive to Ramnagar Jim Corbett reserve forest.' },
+                    { day: 'Day 4-6', title: 'Mussoorie Queen of Hills', desc: 'Drive to Mussoorie via Dhanaulti Eco Park. Kempty Falls, Gun Hill point, Mall Road.' },
+                    { day: 'Day 7', title: 'Haridwar Ganga Aarti & Delhi Drop', desc: 'Visit Har Ki Pauri in Haridwar and drop-off in Delhi.' }
+                ],
+                inclusions: ['6 Nights Hotel Stay', 'Private Vehicle Throughout', 'Daily Breakfast & Dinner'], exclusions: ['Corbett Jeep Safari & boating charges']
+            },
+            'haridwar-rishikesh-mussoorie': {
+                id: 'haridwar-rishikesh-mussoorie', title: '20. Sacred Haridwar, Rishikesh & Mussoorie Escape', duration: '4 Nights / 5 Days', daysNum: 5, price: 12500, badge: 'SPIRITUAL & HILLS', pickup: 'Delhi Airport / Station', stay: '3-Star Hotel Stays', img: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&q=80', desc: 'Experience evening Ganga Aarti at Har Ki Pauri Haridwar, Ram Jhula & Lakshman Jhula in Rishikesh, and Mussoorie Kempty Falls.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Haridwar Ganga Aarti & Rishikesh', desc: 'Delhi to Haridwar, Mansa Devi temple cable car point, Har Ki Pauri Aarti, Rishikesh Beatles Ashram.' },
+                    { day: 'Day 3-4', title: 'Mussoorie Sightseeing', desc: 'Drive to Mussoorie. Kempty Falls, Company Garden, Mall Road evening walk.' },
+                    { day: 'Day 5', title: 'Dehradun Sightseeing & Delhi Drop', desc: 'Visit Sahastradhara, Robber\'s Cave, and Delhi drop-off.' }
+                ],
+                inclusions: ['4 Nights Hotel Stay', 'Private Vehicle', 'Daily Breakfast & Dinner'], exclusions: ['River rafting charges & entry fees']
+            },
+            'uttarakhand-auli-skiing-chopta': {
+                id: 'uttarakhand-auli-skiing-chopta', title: '21. Auli Ski Resort, Chopta Tungnath & Joshimath Trail', duration: '5 Nights / 6 Days', daysNum: 6, price: 19800, badge: 'SKI & TREK', pickup: 'Haridwar / Dehradun Airport', stay: 'Mountain Resorts & Wooden Cottages', img: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80', desc: 'India\'s premier ski destination Auli with Nanda Devi views, Chopta "Mini Switzerland" and Tungnath temple trek.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Rishikesh to Joshimath & Auli Viewpoint', desc: 'Drive via Devprayag confluence to Joshimath and Auli.' },
+                    { day: 'Day 3-4', title: 'Auli Ski Slopes & Chopta Meadow', desc: 'Auli snow slopes view, drive to Chopta meadow, trek to Tungnath highest Shiva temple.' },
+                    { day: 'Day 5-6', title: 'Rishikesh & Departure Drop', desc: 'Return to Rishikesh and Haridwar/Dehradun drop.' }
+                ],
+                inclusions: ['5 Nights Hotel/Cottage Stay', 'Private Cab', 'Daily MAP Meals'], exclusions: ['Auli Ropeway ticket & ski charges']
+            },
+            'uttarakhand-valley-of-flowers': {
+                id: 'uttarakhand-valley-of-flowers', title: '22. Char Dham & Valley of Flowers Trekking Circuit', duration: '8 Nights / 9 Days', daysNum: 9, price: 24500, badge: 'TREKKING & BLOOM', pickup: 'Haridwar / Rishikesh', stay: 'Lodges & Alpine Camps', img: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&q=80', desc: 'Trek into the UNESCO World Heritage Valley of Flowers blooming with endemic alpine flora, Hemkund Sahib holy lake & Badrinath Dham.',
+                daywise: [
+                    { day: 'Day 1-3', title: 'Haridwar to Govindghat Base Camp', desc: 'Drive past Panch Prayag confluences to Govindghat base.' },
+                    { day: 'Day 4-6', title: 'Valley of Flowers & Hemkund Trek', desc: 'Trek to Ghangaria, day trek into Valley of Flowers & steep trek to Hemkund Sahib lake.' },
+                    { day: 'Day 7-9', title: 'Badrinath Dham & Return Drop', desc: 'Drive to Badrinath Temple, Mana last village, and return to Haridwar.' }
+                ],
+                inclusions: ['8 Nights Accommodation', 'Trekking Guide', 'Daily Breakfast & Dinner'], exclusions: ['Pony/Porter charges & park entry fees']
+            },
+            'silk-route-leh': {
+                id: 'silk-route-leh', title: '23. Silk Route Leh Ladakh', duration: '5 Nights / 6 Days', daysNum: 6, price: 22500, badge: 'LEH LADAKH', pickup: 'Leh Kushok Bakula Airport', stay: 'Deluxe Hotel & Nubra Camp', img: 'https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=600&q=80', desc: 'Explore Leh Palace, Magnetic Hill, Khardung La Pass (17,982 ft), Nubra Valley double-hump camel point, and Pangong Tso Lake.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Leh Acclimatization & Local', desc: 'Rest day, Hall of Fame, Magnetic Hill, and Sangam confluence.' },
+                    { day: 'Day 3-4', title: 'Khardung La, Nubra & Pangong', desc: 'Cross Khardung La, Hunder sand dunes camel point, Diskit Monastery, and Pangong Lake.' },
+                    { day: 'Day 5-6', title: 'Chang La Pass & Leh Airport Drop', desc: 'Return to Leh via Chang La Pass and early airport drop.' }
+                ],
+                inclusions: ['5 Nights Deluxe Lodging', 'Nubra Luxury Tent Stay', 'Oxygen Cylinder in Vehicle', 'MAP Meals'], exclusions: ['Airfare & camel ride charges']
+            },
+            'leh-landscapes': {
+                id: 'leh-landscapes', title: '24. Magnificent Landscapes Road Trip Leh', duration: '12 Nights / 13 Days', daysNum: 13, price: 35000, badge: 'LEH ROAD TRIP', pickup: 'Manali / Srinagar', stay: 'Hotels & Glamping Tents', img: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=600&q=80', desc: 'Ultimate Himalayan road trip traversing Srinagar, Kargil, Zojila Pass, Leh, Nubra, Pangong Tso, Jispa & Manali.',
+                daywise: [
+                    { day: 'Day 1-4', title: 'Srinagar to Kargil & Leh', desc: 'Sonamarg, Zojila Pass, Kargil War Memorial, Magnetic Hill, and Leh.' },
+                    { day: 'Day 5-9', title: 'Nubra, Turtuk & Pangong Lake', desc: 'Northernmost India village Turtuk, Hunder dunes, and Pangong Lake.' },
+                    { day: 'Day 10-13', title: 'Sarchu, Jispa, Atal Tunnel & Manali', desc: 'Cross Gata Loops, Baralacha La, Sarchu camping, Jispa, and Manali drop.' }
+                ],
+                inclusions: ['12 Nights Stay', 'Backup Support Vehicle', 'All Passes Permits', 'MAP Meals'], exclusions: ['Bike fuel if riding & activity fees']
+            },
+            'leh-hanle-dark-sky-reserve': {
+                id: 'leh-hanle-dark-sky-reserve', title: '25. Pangong Tso, Hanle Dark Sky Reserve & Tso Moriri', duration: '7 Nights / 8 Days', daysNum: 8, price: 29500, badge: 'ASTRO TOURISM', pickup: 'Leh Kushok Bakula Airport', stay: 'Boutique Homestays & Glamping Tents', img: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80', desc: 'Visit India\'s first Dark Sky Sanctuary in Hanle for Milky Way stargazing, high altitude Tso Moriri Lake, Pangong Tso & Umling La Pass (19,024 ft).',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Leh Acclimatization & Local Monasteries', desc: 'Rest day, Shey, Thiksey & Hemis Monasteries.' },
+                    { day: 'Day 3-5', title: 'Pangong Tso to Hanle Astronomical Observatory', desc: 'Drive along Pangong Tso to Hanle. Stargazing at Indian Astronomical Observatory.' },
+                    { day: 'Day 6-8', title: 'Tso Moriri Lake & Leh Departure', desc: 'Karzok monastery at Tso Moriri Lake, Chumathang hot springs, airport drop.' }
+                ],
+                inclusions: ['7 Nights Stay', 'Inner Line Permits', 'Oxygen Cylinder', 'MAP Meals'], exclusions: ['Airfare & personal expenses']
+            },
+            'leh-sham-valley-cultural': {
+                id: 'leh-sham-valley-cultural', title: '26. Leh, Sham Valley & Monastery Cultural Heritage', duration: '4 Nights / 5 Days', daysNum: 5, price: 18999, badge: 'BUDDHIST HERITAGE', pickup: 'Leh Kushok Bakula Airport', stay: 'Heritage Boutique Hotel', img: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=600&q=80', desc: 'Relaxed cultural immersion in Sham Valley, Alchi 1000-year-old wood carvings, Likir giant Buddha statue, Stok Palace & Shanti Stupa.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Leh Local Sightseeing', desc: 'Shanti Stupa, Leh Palace, Hall of Fame, Central market walk.' },
+                    { day: 'Day 3-5', title: 'Sham Valley Excursion & Departure', desc: 'Magnetic Hill, Sangam river confluence, Alchi & Likir Monasteries, airport drop.' }
+                ],
+                inclusions: ['4 Nights Hotel Stay', 'Private Cab', 'Daily Breakfast & Dinner'], exclusions: ['Monastery entrance ticket fees']
+            },
+            'rajasthan-royal-heritage': {
+                id: 'rajasthan-royal-heritage', title: '27. Royal Rajasthan Jaipur Jodhpur Udaipur Circuit', duration: '6 Nights / 7 Days', daysNum: 7, price: 18999, badge: 'ROYAL HERITAGE', pickup: 'Jaipur Airport / Station', stay: 'Heritage Haveli Hotels', img: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=600&q=80', desc: 'Explore Pink City Jaipur Amer Fort, Jodhpur Mehrangarh Fort, Jaswant Thada, and Udaipur City Palace & Lake Pichola views.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Jaipur Pink City Heritage', desc: 'Amer Fort, Hawa Mahal, City Palace, and Jantar Mantar.' },
+                    { day: 'Day 3-4', title: 'Jodhpur Blue City & Mehrangarh', desc: 'Mehrangarh Fort, Jaswant Thada royal cenotaphs, Umaid Bhawan Palace.' },
+                    { day: 'Day 5-7', title: 'Udaipur City of Lakes & Departure', desc: 'City Palace, Lake Pichola view, Jagmandir, and Udaipur drop.' }
+                ],
+                inclusions: ['6 Nights Heritage Haveli Stays', 'Private AC Vehicle', 'Daily Breakfast Included'], exclusions: ['Fort monument entry & boat ride charges']
+            },
+            'rajasthan-jaisalmer-desert': {
+                id: 'rajasthan-jaisalmer-desert', title: '28. Jaisalmer Golden Desert Safari & Forts', duration: '5 Nights / 6 Days', daysNum: 6, price: 16500, badge: 'DESERT SAFARI', pickup: 'Jodhpur / Jaisalmer Railway Station', stay: 'Haveli Hotel & Sam Desert Camp', img: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80', desc: 'Experience golden sand dunes view at Sam, overnight Swiss tent camping with folk dance & DJ, Jaisalmer Living Fort & Patwon Ki Haveli.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Jodhpur Mehrangarh Fort', desc: 'Arrival Jodhpur, Mehrangarh Fort, Jaswant Thada, and Mandore Gardens.' },
+                    { day: 'Day 3-4', title: 'Jaisalmer Fort & Sam Sand Dunes Camp', desc: 'Golden Fort, Patwon Haveli, sunset view at Sam Dunes, campfire & folk dance.' },
+                    { day: 'Day 5-6', title: 'Kuldhara Haunted Village & Departure', desc: 'Kuldhara abandoned village, Longewala War Memorial border visit, and Jodhpur drop.' }
+                ],
+                inclusions: ['1 Night Sam Desert Luxury Camp', '4 Nights Heritage Hotel', 'Folk Dance Show', 'MAP Meals'], exclusions: ['Camel & Jeep safari charges', 'Quad biking fees']
+            },
+            'rajasthan-grand-circuit': {
+                id: 'rajasthan-grand-circuit', title: '29. Grand Rajasthan Forts & Palaces Circuit', duration: '9 Nights / 10 Days', daysNum: 10, price: 28000, badge: 'GRAND RAJASTHAN', pickup: 'Jaipur Airport / Station', stay: '4-Star Royal Heritage Hotels', img: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80', desc: 'Grand royal journey across Jaipur, Ajmer Sharif Dargah, Pushkar Brahma Temple, Bikaner Junagarh Fort, Jaisalmer Desert, Jodhpur & Udaipur.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Jaipur Pink City', desc: 'Amer Fort, Jal Mahal, City Palace, Chokhi Dhani Rajasthani village.' },
+                    { day: 'Day 3-4', title: 'Pushkar & Bikaner Junagarh', desc: 'Pushkar holy lake, Brahma Temple, drive to Bikaner Junagarh Fort.' },
+                    { day: 'Day 5-7', title: 'Jaisalmer Golden Fort & Desert Camp', desc: 'Sam Sand Dunes, Patwon Haveli, and Jodhpur Mehrangarh.' },
+                    { day: 'Day 8-10', title: 'Udaipur City Palace & Departure', desc: 'Ranakpur Jain temple en route, Udaipur City Palace, Saheliyon Ki Bari, airport drop.' }
+                ],
+                inclusions: ['9 Nights Royal Stay', 'Private AC Vehicle', 'Daily Breakfast & Dinner'], exclusions: ['Monument entry fees & camel ride charges']
+            },
+            'rajasthan-ranthambore-tiger-safari': {
+                id: 'rajasthan-ranthambore-tiger-safari', title: '30. Royal Jaipur & Ranthambore Tiger Safari', duration: '4 Nights / 5 Days', daysNum: 5, price: 15800, badge: 'WILDLIFE & HERITAGE', pickup: 'Jaipur Airport / Station', stay: 'Heritage Hotel & Jungle Resort', img: 'https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=600&q=80', desc: 'Combines Jaipur Pink City forts with Ranthambore National Park for Royal Bengal Tiger reserve views.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Jaipur Amer Fort & City Palace', desc: 'Amer Fort, Nahargarh sunset view, Hawa Mahal, and local bazaar.' },
+                    { day: 'Day 3-5', title: 'Ranthambore National Park Reserve', desc: 'Drive to Sawai Madhopur. Visit Ranthambore Fort and jungle reserve, return to Jaipur.' }
+                ],
+                inclusions: ['4 Nights Lodging', 'Private Cab', 'Daily Breakfast & Dinner'], exclusions: ['Ranthambore Jeep/Canter safari permit fee']
+            },
+            'rajasthan-udaipur-mount-abu': {
+                id: 'rajasthan-udaipur-mount-abu', title: '31. Udaipur Romantic Lakes & Mount Abu Hill Station', duration: '4 Nights / 5 Days', daysNum: 5, price: 14500, badge: 'LAKES & HILLS', pickup: 'Udaipur Airport / Station', stay: 'Lake View & Hill Resorts', img: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=600&q=80', desc: 'Explore Udaipur City Palace, Lake Pichola view, Jagdish temple, and Rajasthan\'s only hill station Mount Abu with Dilwara Jain Temples.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Udaipur City Palace & Pichola View', desc: 'City Palace, Saheliyon Ki Bari, Jagmandir island view.' },
+                    { day: 'Day 3-5', title: 'Mount Abu Dilwara Temples & Nakki Lake', desc: 'Drive to Mount Abu hill station. 11th-century marble Dilwara Temples, Nakki Lake view, Sunset Point.' }
+                ],
+                inclusions: ['4 Nights Hotel Stay', 'Private Cab', 'Daily Breakfast & Dinner'], exclusions: ['Boating activity charges']
+            },
+            'rajasthan-bikaner-jaisalmer-trail': {
+                id: 'rajasthan-bikaner-jaisalmer-trail', title: '32. Bikaner, Jaisalmer & Thar Desert Trail', duration: '5 Nights / 6 Days', daysNum: 6, price: 17200, badge: 'THAR DESERT TRAIL', pickup: 'Jaipur / Bikaner Station', stay: 'Fort Hotels & Desert Tents', img: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80', desc: 'Discover Bikaner Junagarh Fort, Karni Mata Deshnoke temple, Jaisalmer Living Fort, Bada Bagh cenotaphs, and Thar Desert glamping.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Bikaner Junagarh Fort & Camel Breeding Farm', desc: 'Visit unbreached Junagarh Fort, Karni Mata Rat Temple.' },
+                    { day: 'Day 3-6', title: 'Jaisalmer Sand Dunes & Border Post', desc: 'Jaisalmer Fort, Sam desert dunes camp with folk dance, Tanot Mata temple near Pakistan border, drop at Jodhpur.' }
+                ],
+                inclusions: ['1 Night Luxury Desert Camp', '4 Nights Hotel Stay', 'Folk Dance Show', 'MAP Meals'], exclusions: ['Camel safari charges & entry fees']
+            },
+            'rajasthan-chittorgarh-kumbhalgarh': {
+                id: 'rajasthan-chittorgarh-kumbhalgarh', title: '33. Chittorgarh Fort, Kumbhalgarh Wall & Udaipur Heritage', duration: '5 Nights / 6 Days', daysNum: 6, price: 16800, badge: 'VALOR & FORTS', pickup: 'Udaipur Airport / Station', stay: 'Heritage Fort Resorts', img: 'https://images.unsplash.com/photo-1588083949435-84950965e62f?auto=format&fit=crop&w=600&q=80', desc: 'Visit India\'s largest Chittorgarh Fort (Vijay Stambha & Padmini Palace) and Kumbhalgarh Fort featuring the world\'s 2nd longest wall.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Chittorgarh Fort Legend Tour', desc: 'Drive to Chittorgarh Fort, Kirti Stambha, Rana Kumbha Palace.' },
+                    { day: 'Day 3-6', title: 'Kumbhalgarh Great Wall & Udaipur Lakes', desc: 'Kumbhalgarh Fort wall walk, Ranakpur Jain Temple, Udaipur City Palace, Pichola Lake view.' }
+                ],
+                inclusions: ['5 Nights Heritage Lodging', 'Private AC Cab', 'Daily MAP Meals Plan'], exclusions: ['Guide fees & monument tickets']
+            },
+            'kerala-backwaters-munnar': {
+                id: 'kerala-backwaters-munnar', title: '34. Kerala Backwaters, Munnar & Houseboat Cruise', duration: '5 Nights / 6 Days', daysNum: 6, price: 18800, badge: 'GOD\'S OWN COUNTRY', pickup: 'Cochin Airport / Railway Station', stay: 'Munnar Tea Resort & Private Houseboat', img: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=80', desc: 'Munnar mist-covered tea gardens, Cheeyappara waterfalls, Thekkady Periyar wildlife sanctuary, and Alleppey private luxury houseboat cruise.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Cochin to Munnar Tea Gardens', desc: 'Pickup Cochin, Cheeyappara waterfalls, tea plant tour, Eravikulam National Park.' },
+                    { day: 'Day 3', title: 'Munnar to Thekkady Spice Sanctuary', desc: 'Spice plantation walk, Periyar lake boat view.' },
+                    { day: 'Day 4', title: 'Alleppey Private Luxury Houseboat', desc: 'Board private Kettuvallam Houseboat. Cruise backwater canals with onboard meals.' },
+                    { day: 'Day 5-6', title: 'Fort Kochi Sightseeing & Departure', desc: 'Chinese Fishing Nets, St. Francis Church, spice market shopping, Cochin drop.' }
+                ],
+                inclusions: ['01 Night Private Houseboat with All Meals', '4 Nights Resort Stay', 'Private AC Cab', 'Breakfast & Dinner'], exclusions: ['National park entry & boat safari tickets']
+            },
+            'kerala-wayanad-coffee-estates': {
+                id: 'kerala-wayanad-coffee-estates', title: '35. Wayanad Rainforest, Coffee Estates & Edakkal Caves', duration: '4 Nights / 5 Days', daysNum: 5, price: 16500, badge: 'RAINFOREST & COFFEE', pickup: 'Calicut (Kozhikode) Airport / Station', stay: 'Rainforest Treehouse & Estate Resort', img: 'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=600&q=80', desc: 'Lush Wayanad coffee & spice plantations, prehistoric Edakkal Cave petroglyphs, Banasura Sagar dam, and Soochipara waterfalls.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Calicut to Wayanad Estate Resort', desc: 'Drive to Wayanad hills, coffee plantation walk, Lakkidi Viewpoint.' },
+                    { day: 'Day 3-5', title: 'Edakkal Caves & Banasura Dam', desc: 'Prehistoric Edakkal Caves trek, Banasura Sagar earth dam view, Calicut airport drop.' }
+                ],
+                inclusions: ['4 Nights Resort Stay', 'Private AC Cab', 'Daily MAP Meals'], exclusions: ['Cave entry & speedboating activity tickets']
+            },
+            'kerala-kovalam-trivandrum-coastal': {
+                id: 'kerala-kovalam-trivandrum-coastal', title: '36. Kovalam Lighthouse Beach, Varkala Cliff & Trivandrum', duration: '4 Nights / 5 Days', daysNum: 5, price: 17500, badge: 'COASTAL BEACHES', pickup: 'Trivandrum Airport / Station', stay: '4-Star Beachside Resort', img: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80', desc: 'Relax on Kovalam Lighthouse Beach, scenic red cliff views in Varkala, and Padmanabhaswamy Temple in Trivandrum.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Kovalam Beach & Poovar Island Backwaters', desc: 'Lighthouse Beach walk, Poovar Golden Sand Beach mangrove backwater view.' },
+                    { day: 'Day 3-5', title: 'Varkala Cliff Sunset & Trivandrum Temple', desc: 'Varkala Cliff ocean views, Sree Padmanabhaswamy Temple, airport drop.' }
+                ],
+                inclusions: ['4 Nights Beach Resort Stay', 'Private Cab', 'MAP Meals'], exclusions: ['Poovar boat cruise & water sport charges']
+            },
+            'sikkim-gangtok-darjeeling': {
+                id: 'sikkim-gangtok-darjeeling', title: '37. Sikkim Gangtok & Darjeeling Himalayan Escapes', duration: '5 Nights / 6 Days', daysNum: 6, price: 22900, badge: 'HIMALAYAN BEAUTY', pickup: 'Bagdogra Airport / NJP Station', stay: '3-Star Deluxe Mountain Hotels', img: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=80', desc: 'Gangtok Tsomgo Lake at 12,400 ft, Baba Mandir, Nathula Pass border view, and Darjeeling Tiger Hill Kanchenjunga sunrise view.',
+                daywise: [
+                    { day: 'Day 1', title: 'Bagdogra to Gangtok Teesta Valley', desc: 'Pickup and drive along Teesta river to Gangtok. Evening MG Marg walk.' },
+                    { day: 'Day 2', title: 'Tsomgo Glacial Lake & Baba Mandir', desc: 'High altitude Tsomgo Lake, holy Baba Harbhajan Mandir, and Nathula Pass view.' },
+                    { day: 'Day 3', title: 'Gangtok & Drive to Darjeeling', desc: 'Rumtek Monastery, Ropeway point, drive past tea estates to Darjeeling.' },
+                    { day: 'Day 4-5', title: 'Darjeeling Tiger Hill Sunrise View', desc: '4:00 AM Tiger Hill Kanchenjunga sunrise view, Batasia Loop, Tea estate walk.' },
+                    { day: 'Day 6', title: 'Mirik Lake & Airport Drop', desc: 'Drive via Mirik Lake to Bagdogra Airport for drop-off.' }
+                ],
+                inclusions: ['3N Gangtok + 2N Darjeeling Stay', 'Tsomgo Lake Permits', 'Daily MAP Meals', 'Private SUV'], exclusions: ['Nathula Pass vehicle permit & Toy train ticket charges']
+            },
+            'andaman-island-hopping': {
+                id: 'andaman-island-hopping', title: '38. Andaman Island Hopping & Havelock Radhanagar Beach', duration: '5 Nights / 6 Days', daysNum: 6, price: 26500, badge: 'ANDAMAN TROPICAL', pickup: 'Veer Savarkar International Airport Port Blair', stay: 'Beachfront Resorts & AC Hotels', img: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80', desc: 'Cellular Jail Light & Sound show, luxury AC Catamaran ferry ride to Havelock Island, Asia\'s best Radhanagar Beach & Kalapathar turquoise waters.',
+                daywise: [
+                    { day: 'Day 1', title: 'Port Blair Arrival & Cellular Jail Memorial', desc: 'Pickup Port Blair airport. Visit historical Cellular Jail and evening Light & Sound show.' },
+                    { day: 'Day 2-3', title: 'Luxury Ferry to Havelock & Radhanagar Beach', desc: 'Board Makruzz/Nautika AC catamaran ferry to Havelock Island. Sunset at Radhanagar Beach & Kalapathar Beach.' },
+                    { day: 'Day 4-5', title: 'Elephant Beach & Port Blair Return', desc: 'Speedboat transfer to Elephant Beach, return ferry to Port Blair.' },
+                    { day: 'Day 6', title: 'Port Blair Souvenir Shopping & Airport Drop', desc: 'Chatham Saw Mill, Samudrika Naval Marine Museum, and airport drop.' }
+                ],
+                inclusions: ['5 Nights Beachfront Lodging', 'Inter-Island Luxury Ferry Tickets', 'Daily MAP Meals', 'AC Vehicle Transfers'], exclusions: ['Airfare & water sports activity charges']
+            },
+            'andaman-scuba-neil-island': {
+                id: 'andaman-scuba-neil-island', title: '39. Exotic Andaman Marine & Neil Island Getaway', duration: '6 Nights / 7 Days', daysNum: 7, price: 31800, badge: 'CORAL REEF & BEACHES', pickup: 'Veer Savarkar International Airport Port Blair', stay: '4-Star Beach Resorts', img: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80', desc: 'Marine reef views in Havelock, Neil Island Natural Rock Bridge, Bharatpur Beach & Laxmanpur sunset.',
+                daywise: [
+                    { day: 'Day 1', title: 'Port Blair Cellular Jail & Corbyn\'s Cove Beach', desc: 'Cellular Jail visit, Light & Sound show, Corbyn\'s Cove coconut groves.' },
+                    { day: 'Day 2-3', title: 'Havelock Marine Reefs & Elephant Beach', desc: 'Luxury catamaran ferry to Havelock. Visit Elephant Beach reef points.' },
+                    { day: 'Day 4-5', title: 'Neil Island Coral Reefs & Laxmanpur Beach', desc: 'Ferry to Neil Island. Natural Howrah Bridge rock formation, Laxmanpur sunset point.' },
+                    { day: 'Day 6-7', title: 'Ross & North Bay Coral Islands & Departure', desc: 'Boat excursion to British Ross Island ruins & North Bay glass bottom boat point, airport drop.' }
+                ],
+                inclusions: ['6 Nights 4-Star Resort Stay', 'Inter-Island Catamaran Ferries', 'MAP Meals', 'Private AC Vehicle'], exclusions: ['Airfare & Scuba diving / snorkeling activity fees']
+            },
+            'andaman-family-baratang-cave': {
+                id: 'andaman-family-baratang-cave', title: '40. Grand Andaman Family Explorer & Baratang Cave Trail', duration: '7 Nights / 8 Days', daysNum: 8, price: 36500, badge: 'GRAND ISLANDS', pickup: 'Veer Savarkar International Airport Port Blair', stay: '4-Star Luxury Beach Resorts', img: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80', desc: 'Comprehensive Andaman expedition: Port Blair, Havelock Island, Neil Island, plus Jarawa Reserve rainforest drive to Baratang Island Limestone Caves.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Port Blair Sightseeing & Ross Island', desc: 'Cellular Jail, Ross Island peacocks and British ruins, Chidiyatapu sunset.' },
+                    { day: 'Day 3', title: 'Baratang Limestone Caves & Mud Volcano Safari', desc: 'Rainforest drive through Jarawa reserve, mangrove boat safari to million-yr old Limestone Caves.' },
+                    { day: 'Day 4-6', title: 'Havelock Radhanagar & Neil Island Circuit', desc: 'Private ferry to Havelock & Neil Island. Laxmanpur sunset.' },
+                    { day: 'Day 7-8', title: 'Port Blair Marine Shopping & Departure', desc: 'Sagarika Government Cottage Industries market and airport drop-off.' }
+                ],
+                inclusions: ['7 Nights Luxury Stay', 'Baratang Forest Permits & Boat Safari', 'Catamaran Ferry Tickets', 'MAP Meals Plan'], exclusions: ['Personal water activity fees']
+            },
+            'golden-triangle-5n': {
+                id: 'golden-triangle-5n', title: '41. Golden Triangle Tour Delhi Agra Jaipur', duration: '5 Nights / 6 Days', daysNum: 6, price: 15999, badge: 'GOLDEN TRIANGLE', pickup: 'Delhi Airport / Station', stay: '3-Star Deluxe Hotels', img: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=80', desc: 'Classic Golden Triangle circuit covering Delhi India Gate & Qutub Minar, Agra Taj Mahal & Agra Fort, and Jaipur Amer Fort & Hawa Mahal.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'Delhi Sightseeing to Agra', desc: 'India Gate, Lotus Temple, Qutub Minar, drive to Agra.' },
+                    { day: 'Day 3', title: 'Taj Mahal Sunrise & Fatehpur Sikri to Jaipur', desc: 'Sunrise at Taj Mahal, Agra Fort, Fatehpur Sikri, drive to Pink City Jaipur.' },
+                    { day: 'Day 4-6', title: 'Jaipur Forts & Delhi Departure', desc: 'Amer Fort, City Palace, Hawa Mahal, Jal Mahal, drive back to Delhi drop.' }
+                ],
+                inclusions: ['5 Nights Hotel Accommodation', 'Private AC Sedan/SUV', 'Daily Breakfast'], exclusions: ['Monument entry tickets']
+            },
+            'goa-coastal-getaway': {
+                id: 'goa-coastal-getaway', title: '42. Goa Coastal Getaway & Mandovi River Cruise', duration: '4 Nights / 5 Days', daysNum: 5, price: 18500, badge: 'BEACH & CRUISE', pickup: 'Goa Airport / Thivim Station', stay: '4-Star Beach Resort with Pool', img: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80', desc: 'Relax on Calangute & Baga beaches, Aguada Fort sunset view, Dudhsagar Waterfalls jeep trail, and Mandovi River view.',
+                daywise: [
+                    { day: 'Day 1-2', title: 'North Goa Beaches', desc: 'Resort check-in near Calangute beach. Baga beach, Anjuna, and Aguada Fort.' },
+                    { day: 'Day 3-5', title: 'Dudhsagar Trail & Mandovi River', desc: 'Dudhsagar Waterfalls, Mandovi sunset view, and airport drop.' }
+                ],
+                inclusions: ['4-Star Beach Resort Stay', 'Daily Buffet Breakfast', 'Airport Transfers'], exclusions: ['Mandovi river cruise ticket & water sports activity charges']
+            },
+            'kolkata-sundarbans-safari': {
+                id: 'kolkata-sundarbans-safari', title: '43. Kolkata Heritage & Sundarbans Tiger Reserve Trail', duration: '4 Nights / 5 Days', daysNum: 5, price: 14999, badge: 'HERITAGE & WILDLIFE', pickup: 'Kolkata Airport / Station', stay: '3-Star Hotel & Jungle Lodge', img: 'https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=600&q=80', desc: 'Howrah Bridge, Victoria Memorial, authentic Bengali cuisine, and boat launch cruise in UNESCO Sundarbans Tiger Reserve.',
+                daywise: [
+                    { day: 'Day 1', title: 'Kolkata City Heritage Walk', desc: 'Visit Victoria Memorial, Howrah Bridge, Dakshineswar Temple, and Bengali dinner.' },
+                    { day: 'Day 2-3', title: 'Sundarbans Tiger Reserve Boat Trail', desc: 'Boat launch cruise through mangrove creeks for Royal Bengal Tiger & crocodile viewpoints.' },
+                    { day: 'Day 4-5', title: 'Kolkata Sweet Shopping & Departure', desc: 'Return to Kolkata for sweet shopping and airport drop-off.' }
+                ],
+                inclusions: ['City Hotel & Sundarbans Jungle Lodge', 'Forest Entry Permits', 'All Meals in Sundarbans'], exclusions: ['Airfare / Train tickets & personal shopping']
+            }
+        };
+
+        const vehicleInfo = {
+            sedan: { title: 'Swift Dzire / Toyota Etios (Sedan)', desc: 'Ideal for 1-4 passengers.', rate: 2500, img: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=400&q=80' },
+            suv: { title: 'Toyota Innova Crysta / Ertiga (7-Seater SUV)', desc: 'Spacious & comfortable for 4-6 passengers.', rate: 3800, img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80' },
+            tempo: { title: '12 to 25 Seater Tempo Traveller', desc: 'Ideal for group travelers.', rate: 6500, img: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=400&q=80' },
+            coach: { title: 'Luxury Sleeper Coach (28-45 Seater)', desc: 'Full size luxury coach.', rate: 12000, img: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=400&q=80' }
+        };
+
+        let selectedVehCat = 'suv';
+        let activeModalPkg = null;
+
+        // LEGAL & INFO MODAL CONTENT MAP
+        const legalContent = {
+            'terms': {
+                title: 'Terms & Conditions - My Trip Destinations Tours',
+                body: `
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">1. Introduction & Booking Acceptance</h4>
+                    <p class="mb-2">My Trip Destinations Tours (mytripdestinationstours.in), a Himachal Pradesh Government Approved Travel Company (Reg. No. 11-1786/2021-DTO-SML), operates tour packages across India. By booking a tour package or submitting an enquiry through our portal, you agree to abide by these Terms and Conditions.</p>
+                    
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">2. Payments & Confirmation</h4>
+                    <p class="mb-2">An advance deposit (typically 30-50%) is required to confirm hotel bookings and vehicle reservations. The remaining balance must be cleared prior to trip commencement or as specified in your booking voucher. Payments should only be sent through verified official channels.</p>
+                    
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">3. Cancellation & Refund Policy</h4>
+                    <p class="mb-2">Cancellations must be submitted in writing via email to mytripdestinationstours@gmail.com. Refund amounts depend on notice timing: cancellations made 15+ days prior incur minor administrative fees; last-minute cancellations within 48 hours are non-refundable as per hotel and transport partner rules.</p>
+                    
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">4. Vehicles & Itinerary Modifications</h4>
+                    <p class="mb-2">All vehicle rentals include fuel, driver allowance, tolls, and parking as specified. Mountain driving conditions, weather disruptions, or landslides may necessitate safe alternate routes or itinerary adjustments at the discretion of the driver and operations team.</p>
+                `
+            },
+            'privacy': {
+                title: 'Privacy Policies - My Trip Destinations Tours',
+                body: `
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">1. Information We Collect</h4>
+                    <p class="mb-2">When you submit our Fare Estimator or lead form on mytripdestinationstours.in, we collect personal details such as your name, phone number, email address, and travel preferences to generate customized tour quotations and vouchers.</p>
+                    
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">2. Use of Email & Contact Data</h4>
+                    <p class="mb-2">All booking enquiries are transmitted directly to our official email address: <strong>mytripdestinationstours@gmail.com</strong>. We use your contact information solely to communicate itinerary details, cost estimates, and support assistance.</p>
+                    
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">3. Data Security</h4>
+                    <p class="mb-2">We implement robust security practices to protect your personal information from unauthorized access, alteration, or disclosure. We never sell or share your data with unauthorized third parties.</p>
+                `
+            },
+            'about': {
+                title: 'About My Trip Destinations Tours',
+                body: `
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">Official Company Profile</h4>
+                    <p class="mb-2"><strong>My Trip Destinations Tours</strong> is a premier Himachal Pradesh Government Approved Travel Company (Reg. No. 11-1786/2021-DTO-SML) with its Registered Office at <strong>Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</strong>.</p>
+                    <p class="mb-2">We specialize in crafting seamless, transparent, and memorable holiday experiences across Himachal Pradesh, Kashmir, Leh Ladakh, Uttarakhand, Rajasthan, Kerala, Sikkim, Andaman Islands, and Goa. Backed by experienced local drivers and 24x7 guest safety assistance, we ensure zero hidden charges and honest pricing.</p>
+                `
+            },
+            'verification': {
+                title: 'Government Credential Verification',
+                body: `
+                    <h4 class="font-bold text-irctc-navy text-sm mb-1">Official Registration Details</h4>
+                    <p class="mb-2"><strong>Legal Enterprise:</strong> My Trip Destinations Tours</p>
+                    <p class="mb-2"><strong>Registration Number:</strong> 11-1786/2021-DTO-SML</p>
+                    <p class="mb-2"><strong>Approving Department:</strong> Department of Tourism & Civil Aviation, Government of Himachal Pradesh</p>
+                    <p class="mb-2"><strong>Registered Office Address:</strong> Regd.Office Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</p>
+                    <p class="mb-2"><strong>Official Helpline / WhatsApp:</strong> +91 78767 91618</p>
+                    <p class="mb-2"><strong>Official Email:</strong> mytripdestinationstours@gmail.com</p>
+                `
+            },
+            'fraud': {
+                title: 'Beware of Frauds & Official Notice',
+                body: `
+                    <h4 class="font-bold text-rose-600 text-sm mb-1">Official Verification Notice</h4>
+                    <p class="mb-2">Please ensure you are communicating exclusively through our official channels. My Trip Destinations Tours operates only via our official website <strong>mytripdestinationstours.in</strong>, official email <strong>mytripdestinationstours@gmail.com</strong>, and official helpline number <strong>+91 78767 91618</strong>.</p>
+                    <p class="mb-2">We take no responsibility for transactions or communications conducted through unauthorized intermediaries or fake handles.</p>
+                `
+            }
+        };
+
+        function openLegalModal(type) {
+            const content = legalContent[type];
+            if (!content) return;
+            document.getElementById('legal-modal-title').innerText = content.title;
+            document.getElementById('legal-modal-body').innerHTML = content.body;
+            document.getElementById('legalModal').classList.remove('hidden');
+        }
+
+        function closeLegalModal() {
+            document.getElementById('legalModal').classList.add('hidden');
+        }
+
+        function populateDestinationDropdowns() {
+            const selects = document.querySelectorAll('.dest-select-options');
+            let optionsHTML = `<option value="all">All Packages (43 Circuits)</option>`;
+            packageSequence.forEach(pkgKey => {
+                const pkg = packages[pkgKey];
+                if (pkg) {
+                    optionsHTML += `<option value="${pkg.id}">${pkg.title} (${pkg.duration})</option>`;
+                }
+            });
+            selects.forEach(select => { select.innerHTML = optionsHTML; });
+            document.getElementById('calc-dest').value = 'shimla-naldehra-tattapani-4d';
+            document.getElementById('hero-dest').value = 'shimla-naldehra-tattapani-4d';
+        }
+
+        function renderPackages() {
+            const grid = document.getElementById('packages-grid');
+            grid.innerHTML = '';
+            packageSequence.forEach(pkgKey => {
+                const pkg = packages[pkgKey];
+                if (!pkg) return;
+                grid.innerHTML += `
+                    <div class="bg-white rounded border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="${pkg.img}" alt="${pkg.title}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                                <span class="absolute top-3 left-3 bg-irctc-orange text-white text-[10px] font-bold px-2 py-1 rounded uppercase shadow">${pkg.badge}</span>
+                                <span class="absolute bottom-3 right-3 bg-irctc-navy/90 text-white text-[11px] font-bold px-2 py-0.5 rounded backdrop-blur-sm"><i class="fa-solid fa-clock text-irctc-gold mr-1"></i>${pkg.duration}</span>
+                            </div>
+                            <div class="p-4 space-y-2">
+                                <h3 class="font-heading font-bold text-base text-irctc-navy">${pkg.title}</h3>
+                                <p class="text-xs text-slate-600 leading-relaxed">${pkg.desc}</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-irctc-lightBlue border-t border-slate-200 flex justify-between items-center">
+                            <div>
+                                <span class="text-[10px] text-slate-500 block uppercase">Starting From</span>
+                                <strong class="text-base text-irctc-navy font-bold">₹ ${pkg.price.toLocaleString('en-IN')}</strong>
+                            </div>
+                            <button onclick="openModal('${pkg.id}')" class="bg-irctc-navy hover:bg-slate-800 text-white font-bold px-3 py-1.5 rounded text-xs transition">
+                                View Detailed Itinerary
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function selectVehicleCategory(cat) {
+            selectedVehCat = cat;
+            document.querySelectorAll('.v-cat-btn').forEach(btn => {
+                btn.classList.remove('bg-irctc-lightBlue', 'border-irctc-blue', 'text-irctc-navy');
+                btn.classList.add('bg-white', 'border-slate-300', 'text-slate-600');
+            });
+            document.getElementById(`vbtn-${cat}`).classList.add('bg-irctc-lightBlue', 'border-irctc-blue', 'text-irctc-navy');
+
+            const info = vehicleInfo[cat];
+            document.getElementById('vehicle-img').src = info.img;
+            document.getElementById('vehicle-title').innerText = info.title;
+            document.getElementById('vehicle-desc').innerText = info.desc;
+            recalculateTrip();
+        }
+
+        function syncPaxSlider() {
+            document.getElementById('calc-pax-num').value = document.getElementById('calc-pax-slider').value;
+            recalculateTrip();
+        }
+
+        function syncPaxInput() {
+            let val = parseInt(document.getElementById('calc-pax-num').value) || 1;
+            document.getElementById('calc-pax-slider').value = val;
+            recalculateTrip();
+        }
+
+        function recalculateTrip() {
+            const pax = parseInt(document.getElementById('calc-pax-num').value) || 1;
+            const days = parseInt(document.getElementById('calc-duration').value);
+            const hotelTier = document.getElementById('calc-hotel-tier').value;
+            const meals = document.getElementById('calc-meals').value;
+
+            let vehRate = vehicleInfo[selectedVehCat].rate;
+            let hotelRate = 1800;
+            if (hotelTier === '2star') hotelRate = 1200;
+            if (hotelTier === '4star') hotelRate = 2600;
+
+            if (meals === 'cp') hotelRate -= 300;
+            if (meals === 'ap') hotelRate += 400;
+
+            let total = (vehRate * days) + (hotelRate * days * pax);
+            let perPerson = Math.round(total / pax);
+
+            document.getElementById('calc-total-price').innerText = `₹ ${total.toLocaleString('en-IN')}`;
+            document.getElementById('calc-per-person').innerText = `₹ ${perPerson.toLocaleString('en-IN')}`;
+
+            document.getElementById('hidden_total').value = `₹ ${total.toLocaleString('en-IN')}`;
+            document.getElementById('hidden_vehicle').value = vehicleInfo[selectedVehCat].title;
+        }
+
+        function openModal(id) {
+            const pkg = packages[id];
+            if (!pkg) return;
+            activeModalPkg = pkg;
+
+            document.getElementById('modal-badge').innerText = pkg.badge;
+            document.getElementById('modal-title').innerText = pkg.title;
+            document.getElementById('modal-duration').innerText = pkg.duration;
+            document.getElementById('modal-price').innerText = `₹ ${pkg.price.toLocaleString('en-IN')}`;
+            document.getElementById('modal-pickup').innerText = pkg.pickup;
+            document.getElementById('modal-stay').innerText = pkg.stay;
+            document.getElementById('modal-desc').innerText = pkg.desc;
+
+            document.getElementById('modal-daywise').innerHTML = pkg.daywise.map(d => `
+                <div class="bg-irctc-lightBlue p-3 rounded border border-slate-200">
+                    <strong class="text-irctc-navy text-xs block mb-1">${d.day}: ${d.title}</strong>
+                    <p class="text-slate-600 text-[11px]">${d.desc}</p>
+                </div>
+            `).join('');
+
+            document.getElementById('modal-inclusions').innerHTML = pkg.inclusions.map(i => `<li>• ${i}</li>`).join('');
+            document.getElementById('modal-exclusions').innerHTML = pkg.exclusions.map(e => `<li>• ${e}</li>`).join('');
+
+            recalcModalPrice();
+            document.getElementById('pkg-modal').classList.remove('hidden');
+        }
+
+        function recalcModalPrice() {
+            if (!activeModalPkg) return;
+
+            const pax = parseInt(document.getElementById('modal-pax').value) || 1;
+            const tier = parseFloat(document.getElementById('modal-hotel-tier').value) || 1;
+            const meals = document.getElementById('modal-meal-plan').value;
+            const veh = document.getElementById('modal-veh-cat').value;
+
+            const days = activeModalPkg.daysNum || 4;
+            let vehRate = vehicleInfo[veh].rate;
+
+            let baseHotelPerPaxDay = 1800;
+            if (meals === 'cp') baseHotelPerPaxDay = 1400;
+            if (meals === 'ap') baseHotelPerPaxDay = 2200;
+
+            let total = ((baseHotelPerPaxDay * tier) * days * pax) + (vehRate * days);
+            let perPerson = Math.round(total / pax);
+
+            document.getElementById('modal-calc-total').innerText = `₹ ${total.toLocaleString('en-IN')}`;
+            document.getElementById('modal-calc-perperson').innerText = `₹ ${perPerson.toLocaleString('en-IN')}`;
+        }
+
+        function closeModal() {
+            document.getElementById('pkg-modal').classList.add('hidden');
+        }
+
+        async function submitLeadForm(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin text-sm"></i> Submitting Lead to Email...`;
+
+            const form = document.getElementById('leadForm');
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const name = document.getElementById('calc-name').value;
+                const phone = document.getElementById('calc-phone').value;
+                const date = document.getElementById('calc-date').value;
+                const destSelect = document.getElementById('calc-dest');
+                const destText = destSelect.options[destSelect.selectedIndex].text;
+                const total = document.getElementById('calc-total-price').innerText;
+
+                document.getElementById('thanks-name').innerText = name;
+                document.getElementById('thanks-phone').innerText = phone;
+                document.getElementById('thanks-date').innerText = date;
+                document.getElementById('thanks-dest').innerText = destText;
+                document.getElementById('thanks-total').innerText = total;
+
+                document.getElementById('thanksModal').classList.remove('hidden');
+            } catch (error) {
+                document.getElementById('thanksModal').classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<i class="fa-solid fa-paper-plane text-sm"></i> Submit Lead Form To Email & Get Quote`;
+            }
+        }
+
+        function closeThanksModal() {
+            document.getElementById('thanksModal').classList.add('hidden');
+        }
+
+        function sendThanksToWhatsApp() {
+            const name = document.getElementById('thanks-name').innerText;
+            const phone = document.getElementById('thanks-phone').innerText;
+            const date = document.getElementById('thanks-date').innerText;
+            const dest = document.getElementById('thanks-dest').innerText;
+            const total = document.getElementById('thanks-total').innerText;
+
+            const text = `Hi My Trip Destinations Tours,\nI just submitted a lead form on mytripdestinationstours.in:\n- Name: ${name}\n- Phone: ${phone}\n- Travel Date: ${date}\n- Destination: ${dest}\n- Estimated Price: ${total}\n\nPlease share the official quote on Whats App as well!`;
+            window.open(`https://wa.me/917876791618?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function bookModalPackage() {
+            if (!activeModalPkg) return;
+            const name = document.getElementById('calc-name').value || 'Traveler';
+            const phone = document.getElementById('calc-phone').value || 'Not provided';
+            const email = document.getElementById('calc-email').value || 'Not provided';
+            const pax = document.getElementById('modal-pax').value;
+            const total = document.getElementById('modal-calc-total').innerText;
+
+            const text = `Hi My Trip Destinations Tours (${officialLeadMail} / +91 78767 91618),\nI want to confirm a customized package on mytripdestinationstours.in:\n- Guest Name: ${name}\n- Phone: ${phone}\n- Guest Email: ${email}\n- Package: ${activeModalPkg.title} (${activeModalPkg.duration})\n- Travelers: ${pax} Pax\n- Calculated Fare: ${total}\n\nPlease issue official voucher!`;
+            window.open(`https://wa.me/917876791618?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function toggleMobileNav() {
+            document.getElementById('mobile-nav').classList.toggle('hidden');
+        }
+
+        function scrollToCalc() {
+            document.getElementById('custom-calc').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function executeHeroSearch() {
+            document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            populateDestinationDropdowns();
+            renderPackages();
+            recalculateTrip();
+            
+            // Set default travel date as today's date
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('calc-date').value = today;
+        });
+    </script>
+</body>
+</html>
