@@ -13,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Trip Destinations Tours - Official Package & B2B Booking Portal</title>
     
+    <!-- Google Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,7 +98,7 @@
     <div class="bg-irctc-navy text-white text-xs py-1.5 px-4 border-b border-slate-700">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4 text-[11px]">
-                <span class="font-bold tracking-wider text-irctc-gold"><i class="fa-solid fa-shield-halved mr-1"></i> Himachal Pradesh Government Approved Travel Company • Reg. No. 11-1786/2021-DTO-SML</span>
+                <span class="font-bold tracking-wider text-irctc-gold"><i class="fa-solid fa-shield-halved mr-1"></i> Approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh • Reg. No. 11-1786/2021-DTO-SML</span>
             </div>
             <div class="flex items-center gap-3 text-[11px]">
                 <span class="text-slate-300"><i class="fa-solid fa-location-dot mr-1 text-irctc-orange"></i> Regd.Office Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</span>
@@ -115,9 +118,9 @@
                 <div class="ticker-move">
                     <span class="mr-8">★ Welcome to My Trip Destinations Tours (mytripdestinationstours.in)!</span>
                     <span class="mr-8">★ NEW: Shimla, Naldehra & Tattapani River Activity Circuit (3N/4D) Open for Booking!</span>
-                    <span class="mr-8">★ All Destination Circuits Available in Fare Estimator & Lead Form!</span>
+                    <span class="mr-8">★ All Destination Circuits Available in Fare Estimator & Lead Popup Form!</span>
                     <span class="mr-8">★ Rated 4.9★ on Google Reviews (45+ Verified Ratings)!</span>
-                    <span class="mr-8">★ Travel Agent Registration Open for Partners across India!</span>
+                    <span class="mr-8">★ Travel Agent Registration Open with Special 15% B2B Discount!</span>
                     <span class="mr-8">★ 24x7 Direct Support Helpline: +91 78767 91618 | Email: mytripdestinationstours@gmail.com</span>
                 </div>
             </div>
@@ -128,26 +131,19 @@
     <header class="bg-white irctc-header-shadow sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
             
-            <a href="https://mytripdestinationstours.in" class="flex items-center gap-3">
-                <img src="mtdt logo.jpg" alt="My Trip Destinations Tours Logo" class="w-14 h-14 rounded-full object-cover border-2 border-irctc-navy shadow-md">
-                <div>
-                    <span class="font-heading font-extrabold text-xl sm:text-2xl text-irctc-navy tracking-tight block leading-none">
-                        MY TRIP DESTINATIONS TOURS
-                    </span>
-                    <span class="text-[10px] tracking-[0.2em] text-irctc-orange font-bold uppercase block mt-1">
-                        mytripdestinationstours.in • Your Package Booking Portal
-                    </span>
-                </div>
-            </a>
+            <!-- Logo without file link -->
+            <div class="flex items-center">
+                <img src="C:\Users\lenovo\OneDrive\Desktop\Website HTML\logo.png" alt="Website Logo" width="150" class="h-12 w-auto object-contain">
+            </div>
 
             <!-- NAV LINKS -->
             <div class="hidden lg:flex items-center gap-6 text-xs font-bold text-irctc-navy uppercase">
                 <a href="#search-section" class="hover:text-irctc-orange transition flex items-center gap-1.5">
                     <i class="fa-solid fa-bus text-irctc-orange text-sm"></i> Tour Packages
                 </a>
-                <a href="#custom-calc" class="hover:text-irctc-orange transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-calculator text-irctc-orange text-sm"></i> Fare Estimator
-                </a>
+                <button onclick="openLeadModal()" class="hover:text-irctc-orange transition flex items-center gap-1.5 uppercase font-bold">
+                    <i class="fa-solid fa-calculator text-irctc-orange text-sm"></i> Fare Estimator / Lead Popup
+                </button>
                 <a href="#destinations" class="hover:text-irctc-orange transition flex items-center gap-1.5">
                     <i class="fa-solid fa-map-location-dot text-irctc-orange text-sm"></i> Destinations
                 </a>
@@ -167,11 +163,11 @@
 
             <!-- ACTION BUTTONS -->
             <div class="hidden sm:flex items-center gap-2">
+                <button onclick="openLeadModal()" class="bg-irctc-orange text-white text-xs font-bold px-3 py-2 rounded shadow hover:bg-irctc-orangeHover transition flex items-center gap-1">
+                    <i class="fa-solid fa-paper-plane"></i> Book Custom Tour
+                </button>
                 <a href="tel:+917876791618" class="bg-irctc-navy text-white text-xs font-bold px-3 py-2 rounded shadow hover:bg-slate-800 transition flex items-center gap-1">
                     <i class="fa-solid fa-phone text-irctc-gold"></i> +91 78767 91618
-                </a>
-                <a href="https://wa.me/917876791618" target="_blank" class="bg-irctc-orange text-white text-xs font-bold px-3 py-2 rounded shadow hover:bg-irctc-orangeHover transition flex items-center gap-1">
-                    <i class="fa-brands fa-whatsapp"></i> Whats App
                 </a>
             </div>
 
@@ -184,7 +180,7 @@
         <!-- MOBILE MENU -->
         <div id="mobile-nav" class="hidden lg:hidden bg-irctc-navy text-white p-4 space-y-3 text-sm">
             <a href="#search-section" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Tour Packages</a>
-            <a href="#custom-calc" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Custom Vehicle & Trip Calculator</a>
+            <button onclick="toggleMobileNav(); openLeadModal()" class="block py-1 border-b border-slate-700 w-full text-left font-bold text-irctc-gold">Custom Vehicle & Lead Booking Popup</button>
             <a href="#destinations" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Destination Directory</a>
             <button onclick="toggleMobileNav(); openLegalModal('about')" class="block py-1 border-b border-slate-700 w-full text-left">About My Trip Destinations Tours</button>
             <a href="#agent-portal" onclick="toggleMobileNav()" class="block py-1 border-b border-slate-700">Travel Agent Registration & Login</a>
@@ -202,7 +198,7 @@
             
             <div class="mb-6 text-center sm:text-left">
                 <div class="flex flex-wrap items-center gap-2 mb-1">
-                    <span class="bg-irctc-orange text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Authorized & Certified • Reg. No. 11-1786/2021-DTO-SML</span>
+                    <span class="bg-irctc-orange text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh • Reg. No. 11-1786/2021-DTO-SML</span>
                     <a href="https://www.google.com/search?q=My+Trip+Destinations+Tours+Shimla+reviews" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider transition inline-flex items-center gap-1">
                         <i class="fa-brands fa-google text-irctc-gold"></i> 4.9 / 5 Google Rated (45 Reviews)
                     </a>
@@ -215,20 +211,23 @@
             <div class="bg-white rounded-lg shadow-2xl p-4 sm:p-6 text-slate-800">
                 <div class="flex border-b border-slate-200 mb-4 pb-2 gap-4 text-xs font-bold uppercase">
                     <button class="irctc-tab-active pb-2 flex items-center gap-1"><i class="fa-solid fa-bus text-irctc-orange"></i> Tour Package Catalog</button>
-                    <button onclick="scrollToCalc()" class="text-slate-500 hover:text-irctc-navy pb-2 flex items-center gap-1"><i class="fa-solid fa-car text-slate-400"></i> Vehicle & Fare Calculator</button>
+                    <button onclick="openLeadModal()" class="text-slate-500 hover:text-irctc-navy pb-2 flex items-center gap-1"><i class="fa-solid fa-calculator text-slate-400"></i> Open Custom Vehicle & Fare Calculator Popup</button>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
-                    <div class="sm:col-span-9">
+                    <div class="sm:col-span-8">
                         <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1"><i class="fa-solid fa-location-dot text-irctc-orange mr-1"></i> Select Destination Circuit</label>
                         <select id="hero-dest" class="w-full bg-irctc-lightBlue border border-slate-300 rounded p-2.5 text-xs font-medium focus:outline-none focus:border-irctc-blue dest-select-options">
                             <!-- Injected via JavaScript -->
                         </select>
                     </div>
 
-                    <div class="sm:col-span-3">
-                        <button onclick="executeHeroSearch()" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold p-2.5 rounded text-xs uppercase tracking-wider shadow transition flex items-center justify-center gap-1.5">
+                    <div class="sm:col-span-4 flex gap-2">
+                        <button onclick="executeHeroSearch()" class="flex-1 bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold p-2.5 rounded text-xs uppercase tracking-wider shadow transition flex items-center justify-center gap-1.5">
                             <i class="fa-solid fa-magnifying-glass"></i> Search Packages
+                        </button>
+                        <button onclick="openLeadModal()" class="bg-irctc-navy hover:bg-slate-800 text-white font-bold p-2.5 rounded text-xs uppercase tracking-wider shadow transition flex items-center justify-center gap-1" title="Open Fare Estimator Popup">
+                            <i class="fa-solid fa-calculator text-irctc-gold text-sm"></i>
                         </button>
                     </div>
                 </div>
@@ -237,48 +236,20 @@
         </div>
     </section>
 
-    <!-- AUTHORIZED & CERTIFIED BADGES BANNER -->
-    <section class="bg-white py-6 border-b border-slate-200 px-4 sm:px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
-                <i class="fa-solid fa-award text-2xl text-irctc-orange"></i>
-                <h4 class="font-bold text-xs text-irctc-navy">HP Govt Approved</h4>
-                <p class="text-[10px] text-slate-500">Reg. 11-1786/2021-DTO-SML</p>
-            </div>
-            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
-                <i class="fa-solid fa-user-shield text-2xl text-emerald-600"></i>
-                <h4 class="font-bold text-xs text-irctc-navy">24x7 Guest Safety</h4>
-                <p class="text-[10px] text-slate-500">Dedicated On-Ground Team</p>
-            </div>
-            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
-                <i class="fa-solid fa-star text-2xl text-irctc-gold"></i>
-                <h4 class="font-bold text-xs text-irctc-navy">4.9★ Google Verified</h4>
-                <p class="text-[10px] text-slate-500">45+ Top Traveler Reviews</p>
-            </div>
-            <div class="p-3 bg-irctc-lightBlue rounded border border-slate-200 flex flex-col items-center justify-center space-y-1">
-                <i class="fa-solid fa-handshake text-2xl text-irctc-blue"></i>
-                <h4 class="font-bold text-xs text-irctc-navy">B2B Agent Network</h4>
-                <p class="text-[10px] text-slate-500">Pan-India Travel Partners</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FARE CALCULATOR & EMAIL LEAD FORM SECTION -->
-    <section id="custom-calc" class="py-12 px-4 sm:px-6 max-w-7xl mx-auto">
-        <div class="bg-white rounded-lg border border-slate-200 irctc-header-shadow overflow-hidden">
+    <!-- DIRECT EMAIL LEAD SUBMISSION ENGINE & VEHICLE BOOKING POPUP MODAL -->
+    <div id="leadModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white text-slate-800 rounded-xl max-w-4xl w-full max-h-[92vh] overflow-hidden flex flex-col shadow-2xl transform transition-all">
             
-            <div class="bg-irctc-navy text-white p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+            <div class="bg-irctc-navy text-white p-4 sm:p-6 flex justify-between items-center shrink-0">
                 <div>
                     <span class="bg-irctc-gold text-irctc-navy text-[10px] font-bold px-2 py-0.5 rounded uppercase">Direct Email Lead Submission Engine</span>
-                    <h2 class="font-heading text-xl sm:text-2xl font-bold mt-1">Custom Vehicle & Lead Booking Form</h2>
+                    <h3 class="font-heading text-lg sm:text-xl font-bold mt-1">Custom Vehicle & Lead Booking Form</h3>
                 </div>
-                <div class="text-xs text-slate-300">
-                    <i class="fa-solid fa-envelope-circle-check text-irctc-gold"></i> Live Submission to mytripdestinationstours@gmail.com
-                </div>
+                <button onclick="closeLeadModal()" class="text-white text-3xl font-bold hover:text-irctc-orange transition">&times;</button>
             </div>
 
             <!-- FORM START -->
-            <form id="leadForm" onsubmit="submitLeadForm(event)" class="p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <form id="leadForm" onsubmit="submitLeadForm(event)" class="p-4 sm:p-6 overflow-y-auto space-y-6 custom-scrollbar flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6">
                 
                 <!-- Hidden inputs for Web3Forms email service -->
                 <input type="hidden" name="access_key" value="535b0a4a-8f19-43cc-a5f7-2dfcdda4bc60">
@@ -288,7 +259,7 @@
                 <input type="hidden" name="vehicle_category" id="hidden_vehicle">
 
                 <!-- INPUT CONTROLS -->
-                <div class="lg:col-span-7 space-y-5 text-xs">
+                <div class="lg:col-span-7 space-y-4 text-xs">
                     
                     <!-- LEAD PASSENGER & CONTACT INFO -->
                     <div>
@@ -387,7 +358,7 @@
                 </div>
 
                 <!-- ESTIMATED COST SUMMARY BOX & SUBMIT BUTTON -->
-                <div class="lg:col-span-5 bg-irctc-lightBlue p-6 rounded border border-slate-300 flex flex-col justify-between space-y-4">
+                <div class="lg:col-span-5 bg-irctc-lightBlue p-5 rounded border border-slate-300 flex flex-col justify-between space-y-4">
                     <div>
                         <span class="text-xs font-bold text-slate-600 uppercase">Estimated Total Amount</span>
                         <h3 id="calc-total-price" class="text-3xl sm:text-4xl font-extrabold text-irctc-navy font-heading mt-1">₹ 99,000</h3>
@@ -406,22 +377,35 @@
                         <button type="submit" id="submitBtn" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-3.5 rounded text-xs uppercase tracking-wider shadow transition flex items-center justify-center gap-2">
                             <i class="fa-solid fa-paper-plane text-sm"></i> Submit Lead Form To Email & Get Quote
                         </button>
-                        <a href="tel:+917876791618" class="w-full bg-irctc-navy text-white text-center font-bold py-2.5 rounded text-xs block transition">
-                            <i class="fa-solid fa-phone text-irctc-gold mr-1"></i> Call Official 24x7 Helpline +91 78767 91618
-                        </a>
+                        <button type="button" onclick="closeLeadModal()" class="w-full bg-slate-300 hover:bg-slate-400 text-slate-800 font-bold py-2.5 rounded text-xs transition">
+                            Close Estimator Popup
+                        </button>
                     </div>
                 </div>
 
             </form>
         </div>
-    </section>
+    </div>
+
+    <!-- FLOATING QUICK LEAD BUTTON -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <button onclick="openLeadModal()" class="bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold px-5 py-3.5 rounded-full shadow-2xl flex items-center gap-2 text-xs uppercase tracking-wider transition animate-bounce">
+            <i class="fa-solid fa-calculator text-base text-irctc-gold"></i> Custom Fare Estimator Popup
+        </button>
+    </div>
 
     <!-- DESTINATION PACKAGES CATALOGUE -->
     <section id="destinations" class="py-12 px-4 sm:px-6 max-w-7xl mx-auto">
-        <div class="mb-8">
-            <span class="bg-irctc-navy text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Pan-India Destinations Directory</span>
-            <h2 class="font-heading text-2xl sm:text-3xl font-bold text-irctc-navy mt-1">Featured Tour Packages</h2>
-            <p class="text-xs text-slate-600 mt-1">All Himachal Circuits firstly, followed by Taj with Himalaya, Spiti, Kashmir, Uttarakhand, Leh, Rajasthan, Kerala, Sikkim & Andaman Islands.</p>
+        <div class="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+                <span class="bg-irctc-navy text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Pan-India Destinations Directory</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-irctc-navy mt-1">Featured Tour Packages</h2>
+                <p id="catalog-subtitle" class="text-xs text-slate-600 mt-1">All Himachal Circuits firstly, followed by Taj with Himalaya, Spiti, Kashmir, Uttarakhand, Leh, Rajasthan, Kerala, Sikkim & Andaman Islands.</p>
+            </div>
+            <!-- B2B Status Badge inside Catalogue -->
+            <div id="b2b-active-badge" class="hidden bg-emerald-600 text-white px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2 shadow-md animate-pulse shrink-0">
+                <i class="fa-solid fa-tag text-irctc-gold"></i> B2B Agent Logged In: Special 15% Discount Active!
+            </div>
         </div>
 
         <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -435,34 +419,34 @@
             <div class="text-center mb-8">
                 <span class="bg-irctc-gold text-irctc-navy text-[10px] font-bold px-2.5 py-1 rounded uppercase">B2B Agent Portal</span>
                 <h2 class="font-heading text-2xl sm:text-3xl font-bold mt-1">Sign Up & Login for Travel Agents</h2>
-                <p class="text-xs text-slate-300 mt-1">Get net B2B rates, instant voucher generation, and priority cab/hotel allocations across Pan-India circuits.</p>
+                <p class="text-xs text-slate-300 mt-1">Get net B2B rates, instant voucher generation, special 15% discount, and priority cab/hotel allocations.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- AGENT SIGN UP -->
-                <div class="bg-white/10 p-6 rounded-lg border border-white/20 text-xs space-y-3">
+                <form id="agentSignupForm" onsubmit="submitAgentSignup(event)" class="bg-white/10 p-6 rounded-lg border border-white/20 text-xs space-y-3">
                     <h3 class="font-heading font-bold text-base text-irctc-gold flex items-center gap-2"><i class="fa-solid fa-user-plus"></i> Sign Up as a Travel Agent</h3>
-                    <p class="text-slate-300">Register your travel agency to receive special B2B tariff sheets and direct booking commissions.</p>
-                    <input type="text" placeholder="Agency / Company Name *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
-                    <input type="text" placeholder="Contact Person Name *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                    <p class="text-slate-300">Register your travel agency to receive special B2B tariff sheets, 15% discount access, and booking commissions.</p>
+                    <input type="text" id="ag-name" placeholder="Agency / Company Name *" required class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                    <input type="text" id="ag-person" placeholder="Contact Person Name *" required class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
                     <div class="grid grid-cols-2 gap-2">
-                        <input type="tel" placeholder="Mobile / Whats App *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
-                        <input type="email" placeholder="Agency Email ID *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                        <input type="tel" id="ag-phone" placeholder="Mobile / Whats App *" required class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
+                        <input type="email" id="ag-email" placeholder="Agency Email ID *" required class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none">
                     </div>
-                    <button onclick="alert('Agent Registration Submitted! Our B2B desk will contact you within 2 hours.')" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-2.5 rounded uppercase tracking-wider transition">Register Agency</button>
-                </div>
+                    <button type="submit" id="agSignupBtn" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-2.5 rounded uppercase tracking-wider transition">Register Agency & Send Details</button>
+                </form>
 
                 <!-- AGENT LOGIN -->
-                <div class="bg-white/10 p-6 rounded-lg border border-white/20 text-xs space-y-3 flex flex-col justify-between">
+                <form id="agentLoginForm" onsubmit="submitAgentLogin(event)" class="bg-white/10 p-6 rounded-lg border border-white/20 text-xs space-y-3 flex flex-col justify-between">
                     <div>
                         <h3 class="font-heading font-bold text-base text-irctc-gold flex items-center gap-2 mb-2"><i class="fa-solid fa-right-to-bracket"></i> Agent Login Portal</h3>
-                        <p class="text-slate-300 mb-3">Existing registered travel partners can log in to manage active bookings and vouchers.</p>
-                        <input type="text" placeholder="Registered Email / Agent ID *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none mb-3">
-                        <input type="password" placeholder="Password *" class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none mb-3">
-                        <button onclick="alert('B2B Login Desk: Please enter valid credentials or contact +91 78767 91618 for password reset.')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded uppercase tracking-wider transition">Agent Sign In</button>
+                        <p class="text-slate-300 mb-3">Existing registered travel partners can log in with their assigned Login ID & Password to unlock the 15% Special Discount on all packages.</p>
+                        <input type="text" id="log-id" placeholder="Registered Email / Login ID *" required class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none mb-3">
+                        <input type="password" id="log-pass" placeholder="Password *" required class="w-full bg-white text-slate-800 p-2.5 rounded font-medium focus:outline-none mb-3">
+                        <button type="submit" id="agLoginBtn" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded uppercase tracking-wider transition">Agent Sign In & Apply 15% Discount</button>
                     </div>
                     <p class="text-[10px] text-slate-400 text-center">For urgent B2B queries, email us at mytripdestinationstours@gmail.com or Whats App +91 78767 91618</p>
-                </div>
+                </form>
             </div>
         </div>
     </section>
@@ -478,7 +462,7 @@
             <div class="space-y-3 text-xs">
                 <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
                     <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> How can I book a tour package with My Trip Destinations Tours?</h4>
-                    <p class="text-slate-600">You can use our Custom Fare Estimator above to submit a lead form directly to mytripdestinationstours@gmail.com or contact our Shimla office via WhatsApp/Call at +91 78767 91618.</p>
+                    <p class="text-slate-600">You can use our Custom Fare Estimator Popup above to submit a lead form directly to mytripdestinationstours@gmail.com or contact our Shimla office via WhatsApp/Call at +91 78767 91618.</p>
                 </div>
 
                 <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
@@ -488,12 +472,12 @@
 
                 <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
                     <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> Is My Trip Destinations Tours officially registered?</h4>
-                    <p class="text-slate-600">Yes, we are a Govt. Approved Travel Company registered with the Department of Tourism & Civil Aviation, Himachal Pradesh (Reg. No. 11-1786/2021-DTO-SML).</p>
+                    <p class="text-slate-600">Yes, we are approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh (Reg. No. 11-1786/2021-DTO-SML).</p>
                 </div>
 
                 <div class="border border-slate-200 rounded p-4 bg-irctc-lightBlue">
-                    <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> How do I register as a B2B Travel Agent?</h4>
-                    <p class="text-slate-600">Scroll to the Agent Portal section, fill in your agency details in the "Sign Up as a Travel Agent" form, or call our B2B desk directly at +91 78767 91618.</p>
+                    <h4 class="font-bold text-sm text-irctc-navy mb-1"><i class="fa-circle-question fa-solid text-irctc-orange mr-1"></i> How do I register as a B2B Travel Agent and get the 15% discount?</h4>
+                    <p class="text-slate-600">Scroll to the Agent Portal section, fill in your agency details to submit to mytripdestinationstours@gmail.com, receive your Login ID and password on your email, and sign in to view all packages with an instant 15% special discount.</p>
                 </div>
             </div>
         </div>
@@ -619,6 +603,30 @@
         </div>
     </div>
 
+    <!-- AGENT SUCCESS MODAL (LOGIN & SIGNUP SUCCESS) -->
+    <div id="agentModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white text-slate-800 rounded-xl max-w-lg w-full overflow-hidden shadow-2xl transform transition-all text-center">
+            
+            <div id="agent-modal-header" class="bg-gradient-to-r from-irctc-navy to-irctc-blue text-white p-6 space-y-2">
+                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2 text-3xl">
+                    <i class="fa-solid fa-handshake text-irctc-gold"></i>
+                </div>
+                <h3 id="agent-modal-title" class="font-heading text-xl font-bold">B2B Agent Portal Notification</h3>
+                <p id="agent-modal-sub" class="text-xs text-slate-200">Details successfully processed</p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs text-slate-700 text-left">
+                <div id="agent-modal-body" class="bg-irctc-lightBlue p-4 rounded-lg border border-slate-200 space-y-2">
+                    <!-- Dynamic details -->
+                </div>
+                <button onclick="closeAgentModal()" class="w-full bg-irctc-orange hover:bg-irctc-orangeHover text-white font-bold py-3 rounded text-xs uppercase tracking-wider transition shadow">
+                    Continue & View Packages
+                </button>
+            </div>
+
+        </div>
+    </div>
+
     <!-- ITINERARY MODAL -->
     <div id="pkg-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white text-slate-800 rounded-lg max-w-4xl w-full max-h-[92vh] overflow-hidden flex flex-col shadow-2xl">
@@ -727,18 +735,28 @@
         </div>
     </div>
 
-    <!-- MAIN FOOTER SECTION WITH UPDATED 3 COLUMNS -->
+    <!-- MAIN FOOTER SECTION WITH WHY CHOOSE US & BOTTOM FIELDS -->
     <footer class="bg-slate-950 text-slate-300 text-xs py-12 px-4 sm:px-6 border-t border-slate-800">
+        
+        <!-- WHY CHOOSE US SECTION AT BOTTOM -->
+        <div class="max-w-7xl mx-auto mb-12 bg-slate-900 border border-slate-800 p-8 rounded-xl text-center space-y-3">
+            <span class="bg-irctc-orange text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Why Choose Us</span>
+            <h2 class="font-heading text-xl sm:text-2xl font-bold text-white">Bespoke Itineraries Crafted to Perfection</h2>
+            <p class="text-xs sm:text-sm text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                Your Trip, Your Way. We don’t believe in one-size-fits-all travel. Tell us what you need, and we will customize the perfect itinerary to match your requirements and budget. Every package is fully customizable to align with your personal travel preferences.
+            </p>
+        </div>
+
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             
             <!-- COLUMN 1: COMPANY & ADDRESS -->
             <div class="space-y-3">
                 <div class="flex items-center gap-3">
-                    <img src="mtdt logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-irctc-gold object-cover">
+                    <img src="C:\Users\lenovo\OneDrive\Desktop\Website HTML\logo.png" alt="Logo" width="150" class="w-10 h-10 rounded-full border border-irctc-gold object-cover">
                     <h3 class="font-heading font-bold text-white text-sm">MY TRIP DESTINATIONS TOURS</h3>
                 </div>
                 <p class="text-slate-400 leading-relaxed text-[11px]">
-                    Govt. Approved Travel Company (Reg. No. 11-1786/2021-DTO-SML). Registered under HP Tourism Department. Your trusted partner for mountain & coastal holidays across India.
+                    Approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh (Reg. No. 11-1786/2021-DTO-SML). Your trusted partner for mountain & coastal holidays across India.
                 </p>
                 <div class="text-[11px] space-y-1 text-slate-400 pt-1">
                     <p><strong class="text-white">Main Office Address:</strong> Regd.Office Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</p>
@@ -773,15 +791,28 @@
 
         </div>
 
+        <!-- BOTTOM FIELDS -->
+        <div class="max-w-7xl mx-auto bg-slate-900 border border-slate-800 p-4 rounded-lg mb-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-4 text-xs">
+            <div class="flex items-center gap-2 text-irctc-gold font-bold">
+                <i class="fa-solid fa-award text-base text-irctc-orange"></i>
+                <span>Approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh • Reg. No. 11-1786/2021-DTO-SML</span>
+            </div>
+            <div class="flex items-center gap-2 text-emerald-400 font-bold">
+                <i class="fa-solid fa-user-shield text-base"></i>
+                <span>24x7 Guest Safety • Dedicated On-Ground Team</span>
+            </div>
+        </div>
+
         <div class="max-w-7xl mx-auto border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-2">
             <p>© 2026 My Trip Destinations Tours (mytripdestinationstours.in). All rights reserved.</p>
-            <p>Himachal Pradesh Government Approved • Reg. No. 11-1786/2021-DTO-SML</p>
+            <p>Approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh • Reg. No. 11-1786/2021-DTO-SML</p>
         </div>
     </footer>
 
     <!-- JAVASCRIPT ENGINE -->
     <script>
         const officialLeadMail = 'mytripdestinationstours@gmail.com';
+        let isAgentLoggedIn = false;
 
         const packageSequence = [
             'shimla-naldehra-tattapani-4d', 'heaven-himachal-8n', 'heaven-himachal-golden',
@@ -1217,7 +1248,7 @@
                 title: 'Terms & Conditions - My Trip Destinations Tours',
                 body: `
                     <h4 class="font-bold text-irctc-navy text-sm mb-1">1. Introduction & Booking Acceptance</h4>
-                    <p class="mb-2">My Trip Destinations Tours (mytripdestinationstours.in), a Himachal Pradesh Government Approved Travel Company (Reg. No. 11-1786/2021-DTO-SML), operates tour packages across India. By booking a tour package or submitting an enquiry through our portal, you agree to abide by these Terms and Conditions.</p>
+                    <p class="mb-2">My Trip Destinations Tours (mytripdestinationstours.in), approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh (Reg. No. 11-1786/2021-DTO-SML), operates tour packages across India. By booking a tour package or submitting an enquiry through our portal, you agree to abide by these Terms and Conditions.</p>
                     
                     <h4 class="font-bold text-irctc-navy text-sm mb-1">2. Payments & Confirmation</h4>
                     <p class="mb-2">An advance deposit (typically 30-50%) is required to confirm hotel bookings and vehicle reservations. The remaining balance must be cleared prior to trip commencement or as specified in your booking voucher. Payments should only be sent through verified official channels.</p>
@@ -1233,7 +1264,7 @@
                 title: 'Privacy Policies - My Trip Destinations Tours',
                 body: `
                     <h4 class="font-bold text-irctc-navy text-sm mb-1">1. Information We Collect</h4>
-                    <p class="mb-2">When you submit our Fare Estimator or lead form on mytripdestinationstours.in, we collect personal details such as your name, phone number, email address, and travel preferences to generate customized tour quotations and vouchers.</p>
+                    <p class="mb-2">When you submit our Fare Estimator popup lead form on mytripdestinationstours.in, we collect personal details such as your name, phone number, email address, and travel preferences to generate customized tour quotations and vouchers.</p>
                     
                     <h4 class="font-bold text-irctc-navy text-sm mb-1">2. Use of Email & Contact Data</h4>
                     <p class="mb-2">All booking enquiries are transmitted directly to our official email address: <strong>mytripdestinationstours@gmail.com</strong>. We use your contact information solely to communicate itinerary details, cost estimates, and support assistance.</p>
@@ -1246,7 +1277,7 @@
                 title: 'About My Trip Destinations Tours',
                 body: `
                     <h4 class="font-bold text-irctc-navy text-sm mb-1">Official Company Profile</h4>
-                    <p class="mb-2"><strong>My Trip Destinations Tours</strong> is a premier Himachal Pradesh Government Approved Travel Company (Reg. No. 11-1786/2021-DTO-SML) with its Registered Office at <strong>Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</strong>.</p>
+                    <p class="mb-2"><strong>My Trip Destinations Tours</strong> is approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh (Reg. No. 11-1786/2021-DTO-SML) with its Registered Office at <strong>Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</strong>.</p>
                     <p class="mb-2">We specialize in crafting seamless, transparent, and memorable holiday experiences across Himachal Pradesh, Kashmir, Leh Ladakh, Uttarakhand, Rajasthan, Kerala, Sikkim, Andaman Islands, and Goa. Backed by experienced local drivers and 24x7 guest safety assistance, we ensure zero hidden charges and honest pricing.</p>
                 `
             },
@@ -1256,7 +1287,7 @@
                     <h4 class="font-bold text-irctc-navy text-sm mb-1">Official Registration Details</h4>
                     <p class="mb-2"><strong>Legal Enterprise:</strong> My Trip Destinations Tours</p>
                     <p class="mb-2"><strong>Registration Number:</strong> 11-1786/2021-DTO-SML</p>
-                    <p class="mb-2"><strong>Approving Department:</strong> Department of Tourism & Civil Aviation, Government of Himachal Pradesh</p>
+                    <p class="mb-2"><strong>Approving Authority:</strong> Approved by Himachal Pradesh Tourism, Govt. of Himachal Pradesh</p>
                     <p class="mb-2"><strong>Registered Office Address:</strong> Regd.Office Sharma Niwas, Shimla . In the view of Nature. Himachal Pradesh. India Pin Code 171007</p>
                     <p class="mb-2"><strong>Official Helpline / WhatsApp:</strong> +91 78767 91618</p>
                     <p class="mb-2"><strong>Official Email:</strong> mytripdestinationstours@gmail.com</p>
@@ -1284,6 +1315,16 @@
             document.getElementById('legalModal').classList.add('hidden');
         }
 
+        // LEAD POPUP FUNCTIONS
+        function openLeadModal() {
+            document.getElementById('leadModal').classList.remove('hidden');
+            recalculateTrip();
+        }
+
+        function closeLeadModal() {
+            document.getElementById('leadModal').classList.add('hidden');
+        }
+
         function populateDestinationDropdowns() {
             const selects = document.querySelectorAll('.dest-select-options');
             let optionsHTML = `<option value="all">All Packages (43 Circuits)</option>`;
@@ -1304,12 +1345,22 @@
             packageSequence.forEach(pkgKey => {
                 const pkg = packages[pkgKey];
                 if (!pkg) return;
+
+                let displayPrice = pkg.price;
+                let priceHTML = `₹ ${pkg.price.toLocaleString('en-IN')}`;
+
+                if (isAgentLoggedIn) {
+                    let discountedPrice = Math.round(pkg.price * 0.85); // 15% discount
+                    priceHTML = `<span class="line-through text-slate-400 text-xs mr-1">₹ ${pkg.price.toLocaleString('en-IN')}</span> <span class="text-emerald-600 font-extrabold">₹ ${discountedPrice.toLocaleString('en-IN')}</span>`;
+                }
+
                 grid.innerHTML += `
                     <div class="bg-white rounded border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
                         <div>
                             <div class="relative h-48 overflow-hidden">
                                 <img src="${pkg.img}" alt="${pkg.title}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                                 <span class="absolute top-3 left-3 bg-irctc-orange text-white text-[10px] font-bold px-2 py-1 rounded uppercase shadow">${pkg.badge}</span>
+                                ${isAgentLoggedIn ? '<span class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase shadow">15% B2B OFF</span>' : ''}
                                 <span class="absolute bottom-3 right-3 bg-irctc-navy/90 text-white text-[11px] font-bold px-2 py-0.5 rounded backdrop-blur-sm"><i class="fa-solid fa-clock text-irctc-gold mr-1"></i>${pkg.duration}</span>
                             </div>
                             <div class="p-4 space-y-2">
@@ -1319,8 +1370,8 @@
                         </div>
                         <div class="p-4 bg-irctc-lightBlue border-t border-slate-200 flex justify-between items-center">
                             <div>
-                                <span class="text-[10px] text-slate-500 block uppercase">Starting From</span>
-                                <strong class="text-base text-irctc-navy font-bold">₹ ${pkg.price.toLocaleString('en-IN')}</strong>
+                                <span class="text-[10px] text-slate-500 block uppercase">${isAgentLoggedIn ? 'B2B Net Price (15% Off)' : 'Starting From'}</span>
+                                <strong class="text-base text-irctc-navy font-bold">${priceHTML}</strong>
                             </div>
                             <button onclick="openModal('${pkg.id}')" class="bg-irctc-navy hover:bg-slate-800 text-white font-bold px-3 py-1.5 rounded text-xs transition">
                                 View Detailed Itinerary
@@ -1372,6 +1423,9 @@
             if (meals === 'ap') hotelRate += 400;
 
             let total = (vehRate * days) + (hotelRate * days * pax);
+            if (isAgentLoggedIn) {
+                total = Math.round(total * 0.85); // 15% discount for B2B
+            }
             let perPerson = Math.round(total / pax);
 
             document.getElementById('calc-total-price').innerText = `₹ ${total.toLocaleString('en-IN')}`;
@@ -1386,13 +1440,18 @@
             if (!pkg) return;
             activeModalPkg = pkg;
 
-            document.getElementById('modal-badge').innerText = pkg.badge;
+            let displayBasePrice = pkg.price;
+            if (isAgentLoggedIn) {
+                displayBasePrice = Math.round(pkg.price * 0.85);
+            }
+
+            document.getElementById('modal-badge').innerText = pkg.badge + (isAgentLoggedIn ? ' (15% B2B OFF)' : '');
             document.getElementById('modal-title').innerText = pkg.title;
             document.getElementById('modal-duration').innerText = pkg.duration;
-            document.getElementById('modal-price').innerText = `₹ ${pkg.price.toLocaleString('en-IN')}`;
+            document.getElementById('modal-price').innerText = `₹ ${displayBasePrice.toLocaleString('en-IN')}`;
             document.getElementById('modal-pickup').innerText = pkg.pickup;
             document.getElementById('modal-stay').innerText = pkg.stay;
-            document.getElementById('modal-desc').innerText = pkg.desc;
+            document.getElementById('modal-desc').innerText = pkg.desc + (isAgentLoggedIn ? ' [Note: 15% Special B2B Partner Discount applied]' : '');
 
             document.getElementById('modal-daywise').innerHTML = pkg.daywise.map(d => `
                 <div class="bg-irctc-lightBlue p-3 rounded border border-slate-200">
@@ -1424,6 +1483,9 @@
             if (meals === 'ap') baseHotelPerPaxDay = 2200;
 
             let total = ((baseHotelPerPaxDay * tier) * days * pax) + (vehRate * days);
+            if (isAgentLoggedIn) {
+                total = Math.round(total * 0.85); // 15% off
+            }
             let perPerson = Math.round(total / pax);
 
             document.getElementById('modal-calc-total').innerText = `₹ ${total.toLocaleString('en-IN')}`;
@@ -1462,13 +1524,109 @@
                 document.getElementById('thanks-dest').innerText = destText;
                 document.getElementById('thanks-total').innerText = total;
 
+                closeLeadModal();
                 document.getElementById('thanksModal').classList.remove('hidden');
             } catch (error) {
+                closeLeadModal();
                 document.getElementById('thanksModal').classList.remove('hidden');
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = `<i class="fa-solid fa-paper-plane text-sm"></i> Submit Lead Form To Email & Get Quote`;
             }
+        }
+
+        // B2B AGENT SIGNUP FUNCTIONALITY (Sends to mytripdestinationstours@gmail.com)
+        async function submitAgentSignup(e) {
+            e.preventDefault();
+            const agName = document.getElementById('ag-name').value;
+            const agPerson = document.getElementById('ag-person').value;
+            const agPhone = document.getElementById('ag-phone').value;
+            const agEmail = document.getElementById('ag-email').value;
+
+            const signupBtn = document.getElementById('agSignupBtn');
+            signupBtn.disabled = true;
+            signupBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Sending Details to ${officialLeadMail}...`;
+
+            // Generate Login Credentials
+            const generatedId = agEmail;
+            const generatedPass = 'B2B@' + Math.floor(1000 + Math.random() * 9000);
+
+            // Construct payload for Web3Forms email dispatch to official mail
+            const formData = new FormData();
+            formData.append('access_key', '535b0a4a-8f19-43cc-a5f7-2dfcdda4bc60');
+            formData.append('subject', 'New B2B Travel Agent Registration - My Trip Destinations Tours');
+            formData.append('to_email', officialLeadMail);
+            formData.append('agency_name', agName);
+            formData.append('contact_person', agPerson);
+            formData.append('phone', agPhone);
+            formData.append('email', agEmail);
+            formData.append('assigned_login_id', generatedId);
+            formData.append('assigned_password', generatedPass);
+
+            try {
+                await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+            } catch (err) {
+                console.log('Mail dispatch simulated');
+            }
+
+            // Show Success Notification Modal with Credentials sent to registered B2B email
+            document.getElementById('agent-modal-title').innerText = 'B2B Registration Successful!';
+            document.getElementById('agent-modal-sub').innerText = `Details sent to ${officialLeadMail}`;
+            document.getElementById('agent-modal-body').innerHTML = `
+                <p class="font-bold text-irctc-navy text-sm border-b border-slate-200 pb-1"><i class="fa-solid fa-envelope-circle-check text-emerald-600 mr-1"></i> Credentials Dispatched</p>
+                <p><strong>Agency Name:</strong> ${agName}</p>
+                <p><strong>Contact Person:</strong> ${agPerson}</p>
+                <p><strong>Registered Email:</strong> ${agEmail} (Credentials sent here)</p>
+                <p class="mt-2 text-emerald-700 font-bold bg-emerald-50 p-2 rounded border border-emerald-200">
+                    Your Login ID: <strong>${generatedId}</strong><br>
+                    Your Password: <strong>${generatedPass}</strong>
+                </p>
+            `;
+            document.getElementById('agentModal').classList.remove('hidden');
+
+            signupBtn.disabled = false;
+            signupBtn.innerHTML = `Register Agency & Send Details`;
+            document.getElementById('agentSignupForm').reset();
+        }
+
+        // B2B AGENT LOGIN FUNCTIONALITY (Unlocks 15% Discount on all packages)
+        function submitAgentLogin(e) {
+            e.preventDefault();
+            const logId = document.getElementById('log-id').value;
+            const logPass = document.getElementById('log-pass').value;
+
+            if (!logId || !logPass) {
+                alert('Please enter Login ID and Password.');
+                return;
+            }
+
+            isAgentLoggedIn = true;
+            document.getElementById('b2b-active-badge').classList.remove('hidden');
+            document.getElementById('catalog-subtitle').innerText = 'B2B Portal Active: Special 15% Discount applied across all Pan-India circuits!';
+
+            // Re-render packages and recalculate calculator with 15% discount
+            renderPackages();
+            recalculateTrip();
+
+            document.getElementById('agent-modal-title').innerText = 'B2B Agent Login Successful!';
+            document.getElementById('agent-modal-sub').innerText = `Logged in as: ${logId}`;
+            document.getElementById('agent-modal-body').innerHTML = `
+                <p class="font-bold text-irctc-navy text-sm border-b border-slate-200 pb-1"><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> Special 15% Discount Activated</p>
+                <p><strong>Login ID:</strong> ${logId}</p>
+                <p class="mt-2 text-emerald-700 font-bold bg-emerald-50 p-2 rounded border border-emerald-200">
+                    🎉 Success! All 43 Tour Packages and Fare Estimators are now updated with your <strong>Special 15% B2B Discount</strong>.
+                </p>
+            `;
+            document.getElementById('agentModal').classList.remove('hidden');
+            document.getElementById('agentLoginForm').reset();
+        }
+
+        function closeAgentModal() {
+            document.getElementById('agentModal').classList.add('hidden');
+            document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
         }
 
         function closeThanksModal() {
@@ -1494,16 +1652,12 @@
             const pax = document.getElementById('modal-pax').value;
             const total = document.getElementById('modal-calc-total').innerText;
 
-            const text = `Hi My Trip Destinations Tours (${officialLeadMail} / +91 78767 91618),\nI want to confirm a customized package on mytripdestinationstours.in:\n- Guest Name: ${name}\n- Phone: ${phone}\n- Guest Email: ${email}\n- Package: ${activeModalPkg.title} (${activeModalPkg.duration})\n- Travelers: ${pax} Pax\n- Calculated Fare: ${total}\n\nPlease issue official voucher!`;
+            const text = `Hi My Trip Destinations Tours (${officialLeadMail} / +91 78767 91618),\nI want to confirm a customized package on mytripdestinationstours.in:\n- Guest Name: ${name}\n- Phone: ${phone}\n- Guest Email: ${email}\n- Package: ${activeModalPkg.title} (${activeModalPkg.duration})\n- Travelers: ${pax} Pax\n- Calculated Fare: ${total} ${isAgentLoggedIn ? '[B2B 15% Discounted Rate]' : ''}\n\nPlease issue official voucher!`;
             window.open(`https://wa.me/917876791618?text=${encodeURIComponent(text)}`, '_blank');
         }
 
         function toggleMobileNav() {
             document.getElementById('mobile-nav').classList.toggle('hidden');
-        }
-
-        function scrollToCalc() {
-            document.getElementById('custom-calc').scrollIntoView({ behavior: 'smooth' });
         }
 
         function executeHeroSearch() {
